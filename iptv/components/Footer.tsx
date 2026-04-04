@@ -9,14 +9,14 @@ export default function Footer() {
         <div className="cta-bg-overlay"></div>
         <div className="section-container">
           <h2 className="cta-title">
-            The Finest IPTV UK Experience &mdash; 37,000 Channels, Dedicated 4K Quality
+            Start Watching Today
           </h2>
           <p className="cta-subtitle">
-            Premium quality. White-glove support. Up to 30-day money-back guarantee.
+            Join [X,000+] UK subscribers who have already switched to Premium IPTV for their daily entertainment. With instant activation, a [X]-day guarantee, and plans starting from [£X.XX/month], there is no risk and no reason to wait.
           </p>
           <div className="spacer-30"></div>
-          <a href="#pricing" className="btn-outline-white btn-large">
-            Begin Your Prestige Experience Now
+          <a href="/pricing" className="btn-outline-white btn-large">
+            Choose Your Plan &amp; Subscribe Now &rarr;
           </a>
         </div>
       </section>
@@ -27,26 +27,28 @@ export default function Footer() {
             <div className="footer-col footer-logo-col">
               <Link href="/" className="logo" style={{ marginBottom: 12, display: "inline-flex" }}>
                 <img
-                  src="/logo-new.webp"
-                  alt="Prestige IPTV UK"
-                  width={52}
-                  height={52}
+                  src="/premium_iptv_lion_logo_v1.webp"
+                  alt="Premium IPTV UK"
+                  width={44}
+                  height={44}
                   loading="lazy"
                 />
                 <span className="logo-name">
-                  Prestige <span>IPTV UK</span>
+                  Premium <span>IPTV</span>
                 </span>
               </Link>
               <p className="footer-text">
-                Prestige IPTV UK delivers the finest premium IPTV experience in the United
-                Kingdom &mdash; dedicated 4K server infrastructure, 37,000+ live channels,
-                198,000+ curated on-demand titles, AES-256 VPN encryption, and white-glove
-                24/7 priority support for a single one-time payment.
+                Premium IPTV delivers a premium IPTV subscription built specifically for viewers in the United Kingdom &mdash; 37,000+ live channels, 198,000+ on-demand titles, full EPG, catch-up TV, and dedicated UK support.
               </p>
             </div>
             <div className="footer-col">
-              <h4 className="footer-heading">Address</h4>
-              <p className="footer-text">22 Bishopsgate, London, EC2N 4BQ</p>
+              <h4 className="footer-heading">Quick Links</h4>
+              <p className="footer-text"><a href="/">Home</a></p>
+              <p className="footer-text"><a href="/pricing">Pricing</a></p>
+              <p className="footer-text"><a href="/best-iptv-uk">Best IPTV UK Guide</a></p>
+              <p className="footer-text"><a href="/channels">Channels</a></p>
+              <p className="footer-text"><a href="/setup">Setup Guides</a></p>
+              <p className="footer-text"><a href="/faq">FAQ</a></p>
             </div>
             <div className="footer-col">
               <h4 className="footer-heading">Contact</h4>
@@ -57,7 +59,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>
-            <Link href="/">Prestige IPTV UK</Link> &copy; {year}. All rights reserved.
+            <Link href="/">Premium IPTV</Link> &copy; {year}. All rights reserved.
           </p>
         </div>
       </footer>

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteTitle =
-  "Premium IPTV UK - The Definitive 4K Streaming Experience | Prestige IPTV UK";
+  "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026";
 
 const siteDescription =
-  "Prestige IPTV UK is not for everyone - it is for viewers who demand the absolute best from their screen. 37,000 live channels delivered through dedicated 4K server infrastructure, a 198,000-title cinema-grade VOD library, and white-glove support that treats you as an individual, not a ticket number. Welcome to premium IPTV as it was always meant to be.";
+  "Premium IPTV UK subscription with [X,000+] channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, [X]-day guarantee. Subscribe now.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://iptv-premium-uk.tv"),
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   keywords: [
-    "premium iptv",
     "iptv uk",
-    "best iptv uk",
     "iptv subscription",
+    "premium iptv",
     "iptv service",
-    "iptv providers",
     "british iptv",
+    "iptv providers",
+    "best iptv uk",
     "iptv reviews",
   ],
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: "https://iptv-premium-uk.tv/",
-    siteName: "Prestige IPTV UK",
+    siteName: "Premium IPTV",
     images: [
       {
         url: "/og-image.webp",
@@ -51,6 +51,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
 };
+
 
 export default function RootLayout({
   children,

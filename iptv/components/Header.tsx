@@ -5,47 +5,47 @@ export default function Header() {
     <>
       <header className="site-header" id="site-header">
         <div className="header-container">
-          <Link href="/" className="logo" aria-label="Prestige IPTV UK Home">
+          <Link href="/" className="logo" aria-label="Premium IPTV Home">
             <img
-              src="/logo-new.webp"
-              alt="Prestige IPTV UK"
-              width={48}
-              height={48}
+              src="/premium_iptv_lion_logo_v1.webp"
+              alt="Premium IPTV UK"
+              width={44}
+              height={44}
               loading="eager"
             />
             <span className="logo-name">
-              Prestige <span>IPTV UK</span>
+              Premium <span>IPTV</span>
             </span>
           </Link>
 
           <nav className="main-nav" aria-label="Main Navigation">
             <ul className="nav-menu" id="nav-menu">
               <li>
-                <a href="#" className="nav-link active">
+                <Link href="/" className="nav-link active">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#why-us" className="nav-link">
+                <Link href="/#why-us" className="nav-link">
                   Why Choose
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#pricing" className="nav-link">
+                <Link href="/pricing" className="nav-link">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="nav-link">
+                <Link href="/best-iptv-uk" className="nav-link">
                   Guide
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
 
-          <a href="#pricing" className="btn-login">
-            Begin Your Prestige Experience Now
-          </a>
+          <Link href="/pricing" className="btn-login">
+            Get Started Now
+          </Link>
 
           <button
             className="menu-toggle"
@@ -64,9 +64,9 @@ export default function Header() {
       <div className="mobile-menu" id="mobile-menu">
         <div className="mobile-menu-header">
           <Link href="/" className="logo" style={{ textDecoration: "none" }}>
-            <img src="/logo-new.webp" alt="Prestige IPTV UK" width={40} height={40} />
+            <img src="/premium_iptv_lion_logo_v1.webp" alt="Premium IPTV UK" width={40} height={40} />
             <span className="logo-name" style={{ fontSize: 17 }}>
-              Prestige <span>IPTV UK</span>
+              Premium <span>IPTV</span>
             </span>
           </Link>
           <button className="mobile-close" id="mobile-close" aria-label="Close Menu">
@@ -76,21 +76,21 @@ export default function Header() {
         <nav className="mobile-nav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#why-us">Why Choose</a>
+              <a href="/#why-us">Why Choose</a>
             </li>
             <li>
-              <a href="#pricing">Pricing</a>
+              <a href="/pricing">Pricing</a>
             </li>
             <li>
-              <a href="#faq">Guide</a>
+              <a href="/best-iptv-uk">Guide</a>
             </li>
           </ul>
         </nav>
-        <a href="#pricing" className="btn-mobile-cta">
-          Begin Your Prestige Experience Now
+        <a href="/pricing" className="btn-mobile-cta">
+          Get Started Now
         </a>
       </div>
     </>

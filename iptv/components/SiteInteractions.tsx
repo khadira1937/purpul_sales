@@ -239,7 +239,7 @@ function initTestimonialsSlider() {
     const width = window.innerWidth;
     if (width <= 767) return 1;
     if (width <= 1024) return 2;
-    return 4;
+    return 3;
   }
 
   function getSlideWidth() {
@@ -500,7 +500,7 @@ function initActiveNavHighlight() {
         link.classList.remove("active");
       });
 
-      const homeLink = document.querySelector<HTMLAnchorElement>('.nav-link[href="#"]');
+      const homeLink = document.querySelector<HTMLAnchorElement>('.nav-link[href="/"]');
       if (homeLink) homeLink.classList.add("active");
     }
   };
