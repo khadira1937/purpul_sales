@@ -9,8 +9,8 @@ Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 8.0
 License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: flixtele-uk
+License URI: 
+Text Domain: 
 Tags: one-page, custom-menu, featured-images
 */
 
@@ -69,7 +69,7 @@ body {
     radial-gradient(ellipse 80% 50% at 50% -10%,
       rgba(100,50,220,.15) 0%, transparent 60%);
   color: var(--text);
-  font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
@@ -96,13 +96,19 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--white); line-height: 1.2
 .desktop-only { display: block; }
 .mobile-only  { display: none; }
 
-/* Fade-in on scroll */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .55s ease, transform .55s ease;
+/* Fade-in on scroll – CSS-driven with JS enhancement */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in {
+  animation: fadeInUp .55s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 20%;
+}
+/* JS-enhanced fallback for browsers without animation-timeline */
+.fade-in.js-controlled { animation: none; opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
+.fade-in.js-controlled.visible { opacity: 1; transform: translateY(0); }
 
 /* ============================================================
    BUTTONS
@@ -497,7 +503,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--white); line-height: 1.2
   color: rgba(255,255,255,.82);
   padding: 1px 0;
 }
-.feature-list li i {
+.feature-list li i,
+.feature-list li svg {
   color: var(--purple-3);
   font-size: 17px;
   flex-shrink: 0;
@@ -610,7 +617,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--white); line-height: 1.2
   font-weight: 800;
   color: #fff;
   margin-bottom: 6px;
-  font-family: 'Poppins', 'DM Sans', sans-serif;
+  font-family: var(--font-poppins), var(--font-dm-sans), sans-serif;
 }
 .plan-price {
   display: flex;
@@ -878,13 +885,15 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--white); line-height: 1.2
 }
 .faq-question:hover { background: rgba(124,58,237,.1); }
 .faq-question[aria-expanded="true"] { background: rgba(124,58,237,.14); }
-.faq-question i {
+.faq-question i,
+.faq-question svg {
   flex-shrink: 0;
   color: var(--purple-3);
   font-size: 13px;
   transition: transform .3s;
 }
-.faq-question[aria-expanded="true"] i { transform: rotate(180deg); }
+.faq-question[aria-expanded="true"] i,
+.faq-question[aria-expanded="true"] svg { transform: rotate(180deg); }
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -1333,6 +1342,22 @@ section[id] { scroll-margin-top: 88px; }
 }
 .footer-col a:hover {
   color: var(--purple-3);
+}
+
+/* ============================================================
+   CONTENT-VISIBILITY – skip rendering off-screen sections
+   ============================================================ */
+.why-us-section,
+.provider-section,
+.channels-section,
+.steps-section,
+.pricing-section,
+.devices-section,
+.testimonials-section,
+.seo-section,
+.cta-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 /* ============================================================

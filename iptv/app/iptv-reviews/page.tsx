@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+import Icon from "@/components/Icon";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,21 +32,21 @@ export default function ReviewsPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 22 }}>
               <div className="testimonial-card" style={{ flex: "none", width: "100%" }}>
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                  <Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" />
                 </div>
                 <p className="testimonial-text">&ldquo;[Genuine testimonial text from a real customer]&rdquo;</p>
                 <div className="testimonial-author"><h4>[First name, Initial.], subscriber since [Month Year]</h4></div>
               </div>
               <div className="testimonial-card" style={{ flex: "none", width: "100%" }}>
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                  <Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" />
                 </div>
                 <p className="testimonial-text">&ldquo;[Genuine testimonial text from a real customer]&rdquo;</p>
                 <div className="testimonial-author"><h4>[First name, Initial.], subscriber since [Month Year]</h4></div>
               </div>
               <div className="testimonial-card" style={{ flex: "none", width: "100%" }}>
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                  <Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" /><Icon name="star" />
                 </div>
                 <p className="testimonial-text">&ldquo;[Genuine testimonial text from a real customer]&rdquo;</p>
                 <div className="testimonial-author"><h4>[First name, Initial.], subscriber since [Month Year]</h4></div>
@@ -60,7 +61,6 @@ export default function ReviewsPage() {
         </section>
       </main>
       <Footer />
-      <SiteInteractions />
     </>
   );
 }

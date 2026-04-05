@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+import Icon from "@/components/Icon";
+
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
@@ -170,12 +172,15 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-image">
-              <img
+              <Image
                 src="/hero-promo-tvlock.webp"
                 alt="Premium IPTV experience on multiple devices"
-                width={1200}
-                height={800}
-                loading="eager"
+                width={600}
+                height={400}
+                preload
+                fetchPriority="high"
+                sizes="(max-width: 768px) 90vw, 560px"
+                quality={55}
               />
             </div>
           </div>
@@ -194,7 +199,7 @@ export default function Home() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-flag"></i>
+                  <Icon name="flag" />
                 </div>
                 <h3 className="feature-title">Genuine UK Focus</h3>
                 <p className="feature-desc">
@@ -203,7 +208,7 @@ export default function Home() {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-shield-halved"></i>
+                  <Icon name="shield-halved" />
                 </div>
                 <h3 className="feature-title">[X]-Day Money-Back Guarantee</h3>
                 <p className="feature-desc">
@@ -212,7 +217,7 @@ export default function Home() {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-bolt"></i>
+                  <Icon name="bolt" />
                 </div>
                 <h3 className="feature-title">Instant Activation</h3>
                 <p className="feature-desc">
@@ -221,7 +226,7 @@ export default function Home() {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
-                  <i className="fas fa-headset"></i>
+                  <Icon name="headset" />
                 </div>
                 <h3 className="feature-title">Dedicated UK Support</h3>
                 <p className="feature-desc">
@@ -250,43 +255,43 @@ export default function Home() {
                 <div className="features-box">
                   <ul className="feature-list">
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>37,000+ Live TV Channels.</strong> Full access to UK entertainment, sports, news, documentaries, children&apos;s programming, and international channels. We carry every major British network alongside premium sports, cinema, and lifestyle channels. <a href="/channels">Browse our full channel list &rarr;</a>
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>198,000+ Films and Series On Demand.</strong> Our VOD library is updated daily with the latest cinema releases, box sets, and classic films. Search by genre, year, or title and start watching instantly &mdash; no additional fees, no per-title charges.
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>Electronic Programme Guide (EPG).</strong> A full, up-to-date EPG is included with every subscription. Browse what is on now, check tonight&apos;s schedule, or plan your viewing for the week ahead &mdash; exactly as you would with a traditional set-top box.
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>[X]-Day Catch-Up TV.</strong> Missed last night&apos;s match or forgot to watch a programme? Our catch-up feature lets you go back up to [X] days and watch content you missed, so you never fall behind on the shows that matter to you.
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>HD, Full HD &amp; 4K Quality.</strong> Every channel that broadcasts in high definition is delivered in the highest quality available. Premium channels stream in Full HD or 4K where supported, and our adaptive streaming technology adjusts to your internet connection to prevent buffering.
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         <strong>Multi-Device Access.</strong> Watch on your Amazon Firestick, Android phone or tablet, iPhone, iPad, Smart TV (Samsung, LG, Sony), Windows or Mac computer, MAG box, or any device that supports IPTV apps. Your subscription works across [X] devices simultaneously, so different members of your household can watch different channels at the same time. <a href="/setup">See full device compatibility &rarr;</a>
                       </span>
                     </li>
                     <li>
-                      <i className="fas fa-caret-square-right"></i>{" "}
+                      <Icon name="caret-square-right" />{" "}
                       <span>
                         [ADDITIONAL USPs &mdash; e.g., built-in VPN, anti-freeze technology, etc.]
                       </span>
@@ -311,35 +316,35 @@ export default function Home() {
             <div className="channels-grid">
               <div className="channel-category">
                 <div className="channel-category-icon">
-                  <i className="fas fa-tv"></i>
+                  <Icon name="tv" />
                 </div>
                 <h3>British Entertainment</h3>
                 <p>BBC One, BBC Two, ITV1, ITV2, ITV3, ITV4, Channel 4, E4, Channel 5, 5Star, Dave, UKTV Gold, Sky One, Sky Atlantic, Comedy Central UK, and more.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
-                  <i className="fas fa-futbol"></i>
+                  <Icon name="futbol" />
                 </div>
                 <h3>UK Sports</h3>
                 <p>Sky Sports Main Event, Sky Sports Premier League, Sky Sports Football, Sky Sports F1, Sky Sports Cricket, Sky Sports Golf, TNT Sports 1-4, BT Sport, BBC Sport, Eurosport 1 &amp; 2, and all major sporting events including the Premier League, Champions League, Six Nations, The Ashes, Formula 1, and Wimbledon.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
-                  <i className="fas fa-film"></i>
+                  <Icon name="film" />
                 </div>
                 <h3>Movies</h3>
                 <p>Sky Cinema Premiere, Sky Cinema Action, Sky Cinema Comedy, Sky Cinema Sci-Fi, Sky Cinema Family, Film4, and access to our full on-demand film library.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
-                  <i className="fas fa-newspaper"></i>
+                  <Icon name="newspaper" />
                 </div>
                 <h3>News &amp; Documentary</h3>
                 <p>BBC News, Sky News, ITV News, CNN, Al Jazeera, BBC Four, National Geographic, Discovery, History Channel.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
-                  <i className="fas fa-child"></i>
+                  <Icon name="child" />
                 </div>
                 <h3>Kids</h3>
                 <p>CBeebies, CBBC, Cartoon Network, Nickelodeon, Disney Channel, Baby TV.</p>
@@ -544,20 +549,22 @@ export default function Home() {
           <div className="section-container">
             <div className="devices-grid">
               <div className="devices-images">
-                <img
+                <Image
                   src="/flixtele_removed.webp"
                   alt="Premium IPTV UK device compatibility"
-                  width={1824}
-                  height={880}
+                  width={912}
+                  height={440}
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="devices-img-main"
                 />
-                <img
-                  src="https://flixtele.fr/wp-content/uploads/2024/06/Devices-2048x699-1.webp"
+                <Image
+                  src="/devices-2048x699-1.webp"
                   alt="Devices supported by Premium IPTV UK"
-                  width={2048}
-                  height={699}
+                  width={1024}
+                  height={350}
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="devices-img-secondary desktop-only"
                 />
               </div>
@@ -565,12 +572,13 @@ export default function Home() {
                 <h2 className="devices-title">Premium IPTV UK Quality</h2>
                 <h3 className="devices-subtitle">On Every Screen in Your Home</h3>
                 <div className="spacer-20"></div>
-                <img
-                  src="https://flixtele.fr/wp-content/uploads/2024/06/Devices-2048x699-1.webp"
+                <Image
+                  src="/devices-2048x699-1.webp"
                   alt="Premium IPTV UK supported devices"
-                  width={2048}
-                  height={699}
+                  width={768}
+                  height={262}
                   loading="lazy"
+                  sizes="100vw"
                   className="devices-img-mobile mobile-only"
                 />
                 <p className="devices-desc">
@@ -600,12 +608,13 @@ export default function Home() {
           <div className="testimonials-bg-overlay"></div>
           <div className="section-container">
             <div className="stars-rating">
-              <img
-                src="https://flixtele.fr/wp-content/uploads/2024/06/5-stars-1.png-copy.webp"
+              <Image
+                src="/5-stars-1-copy.webp"
                 alt="Five-star Premium IPTV UK reviews"
-                width={401}
-                height={82}
+                width={200}
+                height={41}
                 loading="lazy"
+                sizes="200px"
               />
             </div>
             <h2 className="section-title white">
@@ -619,11 +628,11 @@ export default function Home() {
               <div className="testimonials-track" id="testimonials-track">
                 <div className="testimonial-card">
                   <div className="testimonial-stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
                     &ldquo;I&apos;ve been using Premium IPTV for eight months and the quality is superb. Every Premier League game in crisp HD with zero buffering. Far better value than paying for Sky.&rdquo;
@@ -634,11 +643,11 @@ export default function Home() {
                 </div>
                 <div className="testimonial-card">
                   <div className="testimonial-stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
                     &ldquo;Switched from a cable package and I can&apos;t believe the difference in value. Thousands of channels and I can watch everything from BBC to Sky Atlantic. Setup took about five minutes.&rdquo;
@@ -649,11 +658,11 @@ export default function Home() {
                 </div>
                 <div className="testimonial-card">
                   <div className="testimonial-stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
                     &ldquo;The catch-up feature is what sold me. Missed a drama on ITV? No problem. The EPG is spot on too &mdash; works exactly like a proper set-top box. Brilliant service all round.&rdquo;
@@ -681,7 +690,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What is IPTV and how does it differ from traditional TV?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -692,7 +701,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Which devices can I use?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -703,7 +712,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Is there a free trial available?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -714,7 +723,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What happens if I am not satisfied?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -725,7 +734,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>How quickly will I receive access after payment?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -736,7 +745,7 @@ export default function Home() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I watch on more than one device at the same time?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
@@ -764,7 +773,6 @@ export default function Home() {
         }}
       />
 
-      <SiteInteractions />
     </>
   );
 }

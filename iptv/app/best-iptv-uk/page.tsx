@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+import Icon from "@/components/Icon";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -269,7 +270,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What internet speed do I need for IPTV?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>For standard definition, 5 Mbps is sufficient. For HD, we recommend 10 Mbps. For 4K content, 25 Mbps or higher provides the best experience. Most UK fibre broadband packages exceed these requirements comfortably.</p>
@@ -278,7 +279,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I use IPTV abroad?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>[ANSWER BASED ON YOUR SERVICE CAPABILITIES &mdash; e.g., &ldquo;Yes, your subscription works anywhere in the world with an internet connection. Some UK channels may require a VPN when accessed from outside the United Kingdom.&rdquo;]</p>
@@ -287,7 +288,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Is IPTV going to replace traditional TV?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>IPTV adoption in the UK continues to grow significantly year on year. While traditional broadcast television is not disappearing overnight, the trend toward internet-delivered content is clear. Services like BBC iPlayer, ITVX, and Channel 4 streaming already deliver content via the internet &mdash; IPTV simply extends this model to include live channels and a broader range of content.</p>
@@ -296,7 +297,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What is the difference between IPTV and streaming services like Netflix?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Netflix, Disney+, and Amazon Prime Video are subscription video-on-demand (SVOD) services focused on on-demand content. IPTV provides live television channels as its primary offering, with on-demand content as an additional feature. IPTV is the closest equivalent to a traditional TV package delivered over the internet.</p>
@@ -305,7 +306,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>How do I know if an IPTV provider is reliable?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Look for a genuine money-back guarantee (not just a promise, but a clearly documented refund policy), real customer reviews with specific details, responsive customer support across multiple channels, transparent pricing with no hidden fees, and a proper website with legal pages (privacy policy, terms of service, refund policy). If a provider fails on any of these points, look elsewhere.</p>
@@ -314,7 +315,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What is the best IPTV for watching Premier League football?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>The best IPTV service for Premier League coverage should include Sky Sports Premier League, Sky Sports Main Event, Sky Sports Football, TNT Sports (formerly BT Sport), and all relevant backup/overflow channels for concurrent matches. Additionally, a reliable service will maintain stability during peak matchday demand &mdash; Saturday 3pm kickoffs are the ultimate reliability test for any IPTV provider. Premium IPTV includes full Premier League coverage across all relevant channels. <a href="/channels">View our sports channel lineup &rarr;</a></p>
@@ -323,7 +324,7 @@ export default function BestIptvUkPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>How does Premium IPTV compare to other IPTV providers?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>We focus specifically on the UK market, provide genuine UK channel coverage (not just a global channel dump with some UK channels buried in the list), offer a [X]-day money-back guarantee so you can test the service risk-free, and support every major device platform. Our pricing starts at £[X.XX]/month with no contracts. <a href="/pricing">View our subscription plans &rarr;</a></p>
@@ -354,8 +355,6 @@ export default function BestIptvUkPage() {
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-
-      <SiteInteractions />
     </>
   );
 }

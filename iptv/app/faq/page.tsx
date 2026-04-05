@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+import Icon from "@/components/Icon";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What is IPTV and how does it differ from traditional TV?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through a traditional aerial, satellite dish, or cable. This means you can watch live TV, on-demand films, and catch-up content on any internet-connected device &mdash; from Smart TVs and streaming sticks to phones and laptops.</p>
@@ -43,7 +44,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Which devices can I use?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Our service works on Amazon Firestick, Android TV boxes, Android phones and tablets, iPhones and iPads, Samsung/LG/Sony Smart TVs, Windows and Mac computers, MAG devices, and Enigma2 receivers. You can use any IPTV-compatible app including [APP NAMES].</p>
@@ -52,7 +53,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Is there a free trial available?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>[YES/NO &mdash; include details if applicable]</p>
@@ -61,7 +62,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>How quickly will I receive access after payment?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Access is activated within minutes. You will receive your login credentials by email immediately after your payment is confirmed.</p>
@@ -70,7 +71,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I watch on more than one device at the same time?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Yes. Your subscription supports [X] simultaneous connections, so multiple people in your household can watch different channels on different devices at the same time.</p>
@@ -84,7 +85,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What happens if I am not satisfied?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>You are covered by our [X]-day money-back guarantee. If the service does not meet your expectations for any reason, contact our support team and we will process a full refund. <a href="/refund-policy">View our refund policy &rarr;</a></p>
@@ -93,7 +94,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What payment methods do you accept?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>We accept [LIST ALL PAYMENT METHODS]. All transactions are processed securely.</p>
@@ -102,7 +103,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I upgrade or change my plan later?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Yes. You can switch to a longer plan at any time. Contact our support team and we will apply any price difference as credit toward your new plan.</p>
@@ -116,7 +117,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What internet speed do I need for IPTV?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>For standard definition, 5 Mbps is sufficient. For HD, we recommend 10 Mbps. For 4K content, 25 Mbps or higher provides the best experience.</p>
@@ -125,7 +126,7 @@ export default function FaqPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I use IPTV abroad?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>[ANSWER BASED ON YOUR SERVICE CAPABILITIES]</p>
@@ -142,7 +143,6 @@ export default function FaqPage() {
         </section>
       </main>
       <Footer />
-      <SiteInteractions />
     </>
   );
 }

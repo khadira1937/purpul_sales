@@ -1,5 +1,22 @@
+import LazySiteInteractions from "@/components/LazySiteInteractions";
 import type { Metadata } from "next";
+import { DM_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-dm-sans",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["800"],
+  display: "swap",
+  variable: "--font-poppins",
+});
 
 const siteTitle =
   "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026";
@@ -59,20 +76,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-      </head>
-      <body>{children}</body>
+    <html lang="en-GB" className={`${dmSans.variable} ${poppins.variable}`}>
+      <body className={dmSans.className}>
+        {children}
+        <LazySiteInteractions />
+      </body>
     </html>
   );
 }

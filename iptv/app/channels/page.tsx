@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -58,7 +58,6 @@ export default function ChannelsPage() {
         </section>
       </main>
       <Footer />
-      <SiteInteractions />
     </>
   );
 }

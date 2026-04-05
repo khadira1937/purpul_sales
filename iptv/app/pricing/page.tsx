@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SiteInteractions from "@/components/SiteInteractions";
+import Icon from "@/components/Icon";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -318,28 +319,28 @@ export default function PricingPage() {
             <div className="spacer-30"></div>
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon"><i className="fas fa-tv"></i></div>
+                <div className="feature-icon"><Icon name="tv" /></div>
                 <h3 className="feature-title">Full Channel Access</h3>
                 <p className="feature-desc">
                   You receive every channel in our lineup from day one. UK entertainment, premium sports, cinema, news, documentaries, kids&apos; channels, and international content. Nothing is locked behind a higher tier. <a href="/channels">Browse the full channel list &rarr;</a>
                 </p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon"><i className="fas fa-film"></i></div>
+                <div className="feature-icon"><Icon name="film" /></div>
                 <h3 className="feature-title">On-Demand Library</h3>
                 <p className="feature-desc">
                   [X,000+] films and series updated daily. Search, browse by category, and watch instantly &mdash; included at no extra cost.
                 </p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon"><i className="fas fa-calendar-alt"></i></div>
+                <div className="feature-icon"><Icon name="calendar-alt" /></div>
                 <h3 className="feature-title">EPG &amp; Catch-Up</h3>
                 <p className="feature-desc">
                   A proper electronic programme guide lets you see what is on now and coming up. The [X]-day catch-up feature means you never miss a programme.
                 </p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon"><i className="fas fa-laptop"></i></div>
+                <div className="feature-icon"><Icon name="laptop" /></div>
                 <h3 className="feature-title">Multi-Device Streaming</h3>
                 <p className="feature-desc">
                   Use your subscription on [X] devices at the same time. Works on Firestick, Android, iOS, Smart TVs, MAG boxes, computers, and more.
@@ -401,7 +402,7 @@ export default function PricingPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Do I need to pay for anything beyond the subscription price?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>No. The price shown is the total cost. There are no activation fees, no per-channel charges, and no hidden costs. Your subscription includes everything listed on this page.</p>
@@ -410,7 +411,7 @@ export default function PricingPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Can I upgrade or change my plan later?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>Yes. You can switch to a longer plan at any time. Contact our support team and we will apply any price difference as credit toward your new plan.</p>
@@ -419,7 +420,7 @@ export default function PricingPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What payment methods do you accept?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>We accept [LIST ALL PAYMENT METHODS]. All transactions are processed securely with [ENCRYPTION/SECURITY DETAILS].</p>
@@ -428,7 +429,7 @@ export default function PricingPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>Is there an auto-renewal?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>[YES/NO &mdash; be transparent. If yes, explain how to cancel before renewal. If no, explain how to renew.]</p>
@@ -437,7 +438,7 @@ export default function PricingPage() {
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
                     <span>What if I want to cancel?</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>[Explain cancellation process clearly. If within guarantee period, explain refund process. If after guarantee period, explain what happens to remaining subscription time.]</p>
@@ -481,8 +482,6 @@ export default function PricingPage() {
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-
-      <SiteInteractions />
     </>
   );
 }

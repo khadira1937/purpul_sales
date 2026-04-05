@@ -1,3 +1,5 @@
+import Icon from "@/components/Icon";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -26,12 +28,13 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-col footer-logo-col">
               <Link href="/" className="logo" style={{ marginBottom: 12, display: "inline-flex" }}>
-                <img
+                <Image
                   src="/premium_iptv_lion_logo_v1.webp"
                   alt="Premium IPTV UK"
                   width={44}
                   height={44}
                   loading="lazy"
+                  sizes="44px"
                 />
                 <span className="logo-name">
                   Premium <span>IPTV</span>
@@ -65,7 +68,7 @@ export default function Footer() {
       </footer>
 
       <a href="#" className="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
-        <i className="fas fa-chevron-up"></i>
+        <Icon name="chevron-up" />
       </a>
     </>
   );

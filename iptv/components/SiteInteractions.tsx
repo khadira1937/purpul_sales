@@ -2,38 +2,60 @@
 
 import { useEffect } from "react";
 
+const schedule =
+  typeof window !== "undefined" && "requestIdleCallback" in window
+    ? (window as unknown as { requestIdleCallback: (cb: () => void) => number }).requestIdleCallback
+    : (cb: () => void) => window.setTimeout(cb, 1);
+
 export default function SiteInteractions() {
   useEffect(() => {
     const cleanups: Array<() => void> = [];
 
+    // Critical (above-fold): run immediately
     const stickyCleanup = initStickyHeader();
     if (stickyCleanup) cleanups.push(stickyCleanup);
 
     const mobileCleanup = initMobileMenu();
     if (mobileCleanup) cleanups.push(mobileCleanup);
 
-    const smoothCleanup = initSmoothScroll();
-    if (smoothCleanup) cleanups.push(smoothCleanup);
+    // Non-critical: defer to idle time to reduce TBT
+    const idleIds: number[] = [];
 
-    const pricingCleanup = initPricingToggle();
-    if (pricingCleanup) cleanups.push(pricingCleanup);
+    const deferredInits = [
+      initSmoothScroll,
+      initPricingToggle,
+      initFaqAccordion,
+      initScrollToTop,
+    ];
 
-    const sliderCleanup = initTestimonialsSlider();
-    if (sliderCleanup) cleanups.push(sliderCleanup);
+    for (const init of deferredInits) {
+      idleIds.push(schedule(() => {
+        const cleanup = init();
+        if (cleanup) cleanups.push(cleanup);
+      }));
+    }
 
-    const faqCleanup = initFaqAccordion();
-    if (faqCleanup) cleanups.push(faqCleanup);
+    // Heavier features are delayed a bit further to reduce startup main-thread pressure.
+    const heavyInitTimer = window.setTimeout(() => {
+      idleIds.push(schedule(() => {
+        const activeNavCleanup = initActiveNavHighlight();
+        if (activeNavCleanup) cleanups.push(activeNavCleanup);
 
-    const scrollTopCleanup = initScrollToTop();
-    if (scrollTopCleanup) cleanups.push(scrollTopCleanup);
+        const sliderCleanup = initTestimonialsSlider();
+        if (sliderCleanup) cleanups.push(sliderCleanup);
 
-    const scrollAnimationsCleanup = initScrollAnimations();
-    if (scrollAnimationsCleanup) cleanups.push(scrollAnimationsCleanup);
-
-    const navCleanup = initActiveNavHighlight();
-    if (navCleanup) cleanups.push(navCleanup);
+        const scrollAnimationsCleanup = initScrollAnimations();
+        if (scrollAnimationsCleanup) cleanups.push(scrollAnimationsCleanup);
+      }));
+    }, 1200);
 
     return () => {
+      const cancel =
+        "cancelIdleCallback" in window
+          ? (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback
+          : clearTimeout;
+      window.clearTimeout(heavyInitTimer);
+      idleIds.forEach((id) => cancel(id));
       cleanups.forEach((cleanup) => cleanup());
     };
   }, []);
@@ -434,13 +456,23 @@ function initScrollToTop() {
 }
 
 function initScrollAnimations() {
+  // If browser supports CSS animation-timeline (scroll-driven animations),
+  // skip JS entirely — CSS handles it
+  if (CSS.supports("animation-timeline", "view()")) {
+    const elements = document.querySelectorAll<HTMLElement>(
+      ".feature-card, .plan-card, .testimonial-card, .seo-content h2, .seo-content h3"
+    );
+    elements.forEach((el) => el.classList.add("fade-in"));
+    return;
+  }
+
   const elements = document.querySelectorAll<HTMLElement>(
     ".feature-card, .plan-card, .testimonial-card, .seo-content h2, .seo-content h3"
   );
 
   if (!("IntersectionObserver" in window)) {
     elements.forEach((element) => {
-      element.classList.add("fade-in", "visible");
+      element.classList.add("fade-in", "js-controlled", "visible");
     });
     return;
   }
@@ -449,7 +481,7 @@ function initScrollAnimations() {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in", "visible");
+          entry.target.classList.add("visible");
           observer.unobserve(entry.target);
         }
       });
@@ -461,7 +493,7 @@ function initScrollAnimations() {
   );
 
   elements.forEach((element) => {
-    element.classList.add("fade-in");
+    element.classList.add("fade-in", "js-controlled");
     observer.observe(element);
   });
 
