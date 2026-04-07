@@ -11,14 +11,14 @@ export default function Footer() {
         <div className="cta-bg-overlay"></div>
         <div className="section-container">
           <h2 className="cta-title">
-            Start Watching Today
+            Get Your Premium IPTV UK Subscription Today
           </h2>
           <p className="cta-subtitle">
-            Join [X,000+] UK subscribers who have already switched to Premium IPTV for their daily entertainment. With instant activation, a [X]-day guarantee, and plans starting from [£X.XX/month], there is no risk and no reason to wait.
+            Join over 50,000 happy UK customers. Watch every channel you love in stunning 4K. No buffering. No contracts. No nonsense. Start today and save up to 50%. Pick your plan and watch in minutes.
           </p>
           <div className="spacer-30"></div>
           <a href="/pricing" className="btn-outline-white btn-large">
-            Choose Your Plan &amp; Subscribe Now &rarr;
+            &#127916; Get Started Now &mdash; 30-Day Money Back Guarantee
           </a>
         </div>
       </section>

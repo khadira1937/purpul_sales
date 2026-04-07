@@ -5,14 +5,14 @@ import Icon from "@/components/Icon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV UK Plans & Pricing — Subscribe from £[X]/mo | [BRAND]",
+  title: "Pricing Plans | Premium IPTV UK",
   description:
-    "Buy your IPTV subscription today. Plans from £[X.XX]/month with [X,000+] channels, 4K quality, instant activation & [X]-day guarantee. No contract, cancel anytime.",
+    "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
   alternates: { canonical: "/pricing" },
   openGraph: {
-    title: "IPTV UK Plans & Pricing — Subscribe from £[X]/mo | [BRAND]",
+    title: "Pricing Plans | Premium IPTV UK",
     description:
-      "Buy your IPTV subscription today. Plans from £[X.XX]/month with [X,000+] channels, 4K quality, instant activation & [X]-day guarantee. No contract, cancel anytime.",
+      "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
     url: "https://iptv-premium-uk.tv/pricing",
     type: "website",
     locale: "en_GB",
@@ -28,11 +28,11 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://iptv-premium-uk.tv/pricing#webpage",
       url: "https://iptv-premium-uk.tv/pricing",
-      name: "IPTV UK Plans & Pricing — Subscribe from £[X]/mo | [BRAND]",
+      name: "Pricing Plans | Premium IPTV UK",
       inLanguage: "en-GB",
       isPartOf: { "@id": "https://iptv-premium-uk.tv/#website" },
       description:
-        "Buy your IPTV subscription today. Plans from £[X.XX]/month with [X,000+] channels, 4K quality, instant activation & [X]-day guarantee.",
+        "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
     },
     {
       "@type": "BreadcrumbList",
@@ -43,22 +43,8 @@ const jsonLd = {
     },
     {
       "@type": "Product",
-      name: "Premium IPTV — 1-Month IPTV Subscription",
-      description: "Premium IPTV subscription with [X,000+] live channels, VOD library, EPG, and catch-up TV for 1 month.",
-      brand: { "@type": "Brand", name: "Premium IPTV" },
-      offers: {
-        "@type": "Offer",
-        url: "https://iptv-premium-uk.tv/pricing",
-        priceCurrency: "GBP",
-        price: "[XX.XX]",
-        availability: "https://schema.org/InStock",
-        priceValidUntil: "2026-12-31",
-      },
-    },
-    {
-      "@type": "Product",
       name: "Premium IPTV — 3-Month IPTV Subscription",
-      description: "Premium IPTV subscription with [X,000+] live channels, VOD library, EPG, and catch-up TV for 3 months.",
+      description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 3 months.",
       brand: { "@type": "Brand", name: "Premium IPTV" },
       offers: {
         "@type": "Offer",
@@ -72,7 +58,7 @@ const jsonLd = {
     {
       "@type": "Product",
       name: "Premium IPTV — 6-Month IPTV Subscription",
-      description: "Premium IPTV subscription with [X,000+] live channels, VOD library, EPG, and catch-up TV for 6 months.",
+      description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 6 months.",
       brand: { "@type": "Brand", name: "Premium IPTV" },
       offers: {
         "@type": "Offer",
@@ -86,7 +72,7 @@ const jsonLd = {
     {
       "@type": "Product",
       name: "Premium IPTV — 12-Month IPTV Subscription",
-      description: "Premium IPTV subscription with [X,000+] live channels, VOD library, EPG, and catch-up TV for 12 months.",
+      description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 12 months.",
       brand: { "@type": "Brand", name: "Premium IPTV" },
       offers: {
         "@type": "Offer",
@@ -100,7 +86,7 @@ const jsonLd = {
     {
       "@type": "Product",
       name: "Premium IPTV — 24-Month IPTV Subscription",
-      description: "Premium IPTV subscription with [X,000+] live channels, VOD library, EPG, and catch-up TV for 24 months.",
+      description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 24 months.",
       brand: { "@type": "Brand", name: "Premium IPTV" },
       offers: {
         "@type": "Offer",
@@ -135,7 +121,7 @@ const jsonLd = {
           name: "What payment methods do you accept?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We accept [LIST ALL PAYMENT METHODS]. All transactions are processed securely with [ENCRYPTION/SECURITY DETAILS].",
+            text: "We accept major debit and credit cards. All transactions are processed securely.",
           },
         },
         {
@@ -143,7 +129,7 @@ const jsonLd = {
           name: "Is there an auto-renewal?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "[YES/NO — be transparent. If yes, explain how to cancel before renewal. If no, explain how to renew.]",
+            text: "No. There is no automatic renewal. You can renew manually when your current plan ends.",
           },
         },
         {
@@ -151,7 +137,7 @@ const jsonLd = {
           name: "What if I want to cancel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "[Explain cancellation process clearly. If within guarantee period, explain refund process. If after guarantee period, explain what happens to remaining subscription time.]",
+            text: "You can cancel at any time. If you are within the 30-day money-back guarantee period and not satisfied, contact support for a full refund.",
           },
         },
       ],
@@ -180,22 +166,13 @@ export default function PricingPage() {
           <div className="pricing-bg-overlay"></div>
           <div className="section-container">
             <h1 className="section-title white">
-              IPTV UK Subscription Plans &mdash; Choose What Suits You
+              Choose Your Premium IPTV UK Plan &mdash; Instant Activation
             </h1>
-            <p className="pricing-page-intro">
-              Every Premium IPTV plan gives you the same complete experience: [X,000+] live channels, [X,000+] films and series on demand, a full electronic programme guide, [X]-day catch-up, and streaming in up to 4K quality. The only difference between plans is the subscription length &mdash; and the longer you commit, the less you pay per month.
-            </p>
-            <p className="pricing-page-intro">
-              No contracts. No hidden fees. Cancel at any time. All plans include instant activation and our [X]-day money-back guarantee.
-            </p>
-
-            <div className="spacer-30"></div>
-
-            <h2 className="section-title white" style={{ fontSize: "clamp(1.5rem, 2.5vw, 2rem)" }}>
-              Our Subscription Plans
+            <h2 className="pricing-subtitle">
+              Every plan includes 4K UHD streams, built-in VPN, anti-freeze technology, full VOD access, all sports channels, 24/7 UK support, and a 30-day money-back guarantee. No hidden fees. No contracts. Cancel any time.
             </h2>
 
-            <div className="spacer-20"></div>
+            <div className="spacer-30"></div>
 
             <div className="plans-section">
               <div className="connection-toggle">
@@ -219,15 +196,15 @@ export default function PricingPage() {
                     <span className="currency">&pound;</span>
                     <span className="amount" data-price1="25.99" data-price2="37.99">25.99</span>
                   </div>
-                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe</a>
+                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Begin Your Premium Experience</a>
                   <ul className="plan-features">
-                    <li>[X,000+] live channels with full UK coverage</li>
-                    <li>[X,000+] films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>37,000+ live channels with full UK coverage</li>
+                    <li>198,000+ films, series, and documentaries on demand</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>[X] simultaneous devices</li>
-                    <li>[24/7] support</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
                     <li>Instant activation</li>
                   </ul>
                 </div>
@@ -243,16 +220,16 @@ export default function PricingPage() {
                     <span className="currency">&pound;</span>
                     <span className="amount" data-price1="35.99" data-price2="57.99">35.99</span>
                   </div>
-                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe</a>
+                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe for 6 Months</a>
                   <ul className="plan-features">
-                    <li>[X,000+] live channels with full UK coverage</li>
-                    <li>[X,000+] films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>37,000+ live channels with full UK coverage</li>
+                    <li>198,000+ films, series, and documentaries on demand</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>[X] simultaneous devices</li>
-                    <li>[24/7] support</li>
-                    <li>Save [X]%</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
+                    <li>Instant activation</li>
                   </ul>
                 </div>
 
@@ -268,16 +245,16 @@ export default function PricingPage() {
                     <span className="currency">&pound;</span>
                     <span className="amount" data-price1="49.99" data-price2="89.99">49.99</span>
                   </div>
-                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe</a>
+                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe for 12 Months</a>
                   <ul className="plan-features">
-                    <li>[X,000+] live channels with full UK coverage</li>
-                    <li>[X,000+] films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>37,000+ live channels with full UK coverage</li>
+                    <li>198,000+ films, series, and documentaries on demand</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>[X] simultaneous devices</li>
-                    <li>[24/7] support</li>
-                    <li>Save [X]%</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
+                    <li>Instant activation</li>
                   </ul>
                 </div>
 
@@ -292,19 +269,23 @@ export default function PricingPage() {
                     <span className="currency">&pound;</span>
                     <span className="amount" data-price1="79.99" data-price2="129.99">79.99</span>
                   </div>
-                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe</a>
+                  <a className="plan-btn" data-href1="#pricing" data-href2="#pricing" href="#pricing">Subscribe for 24 Months</a>
                   <ul className="plan-features">
-                    <li>[X,000+] live channels with full UK coverage</li>
-                    <li>[X,000+] films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>37,000+ live channels with full UK coverage</li>
+                    <li>198,000+ films, series, and documentaries on demand</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>[X] simultaneous devices</li>
-                    <li>[24/7] support</li>
-                    <li>Save [X]%</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
+                    <li>Instant activation</li>
                   </ul>
                 </div>
               </div>
+            </div>
+
+            <div className="pricing-note">
+              <p>All payments are processed securely. We accept major debit and credit cards. Your subscription activates instantly and is protected by our 30-day money-back guarantee.</p>
             </div>
           </div>
         </section>
@@ -322,35 +303,35 @@ export default function PricingPage() {
                 <div className="feature-icon"><Icon name="tv" /></div>
                 <h3 className="feature-title">Full Channel Access</h3>
                 <p className="feature-desc">
-                  You receive every channel in our lineup from day one. UK entertainment, premium sports, cinema, news, documentaries, kids&apos; channels, and international content. Nothing is locked behind a higher tier. <a href="/channels">Browse the full channel list &rarr;</a>
+                  You receive every channel in our lineup from day one, including 37,000+ live channels with complete UK coverage. Nothing is locked behind a higher tier. <a href="/channels">Browse the full channel list &rarr;</a>
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="film" /></div>
                 <h3 className="feature-title">On-Demand Library</h3>
                 <p className="feature-desc">
-                  [X,000+] films and series updated daily. Search, browse by category, and watch instantly &mdash; included at no extra cost.
+                  198,000+ films and series updated daily. Search, browse by category, and watch instantly &mdash; included at no extra cost.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="calendar-alt" /></div>
                 <h3 className="feature-title">EPG &amp; Catch-Up</h3>
                 <p className="feature-desc">
-                  A proper electronic programme guide lets you see what is on now and coming up. The [X]-day catch-up feature means you never miss a programme.
+                  A proper electronic programme guide lets you see what is on now and coming up. The 7-day catch-up feature means you never miss a programme.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="laptop" /></div>
                 <h3 className="feature-title">Multi-Device Streaming</h3>
                 <p className="feature-desc">
-                  Use your subscription on [X] devices at the same time. Works on Firestick, Android, iOS, Smart TVs, MAG boxes, computers, and more.
+                  Use your subscription on up to 5 devices at the same time. Works on Firestick, Android, iOS, Smart TVs, MAG boxes, computers, and more.
                 </p>
               </div>
             </div>
             <div className="spacer-30"></div>
             <div style={{ textAlign: "center" }}>
               <p className="section-intro">
-                <strong>[X]-Day Money-Back Guarantee.</strong> Try the full service risk-free. If it does not meet your expectations, contact us within [X] days for a complete refund. <a href="/refund-policy">Read our refund policy &rarr;</a>
+                <strong>30-Day Money-Back Guarantee.</strong> Try the full service risk-free. If it does not meet your expectations, contact us within 30 days for a complete refund. <a href="/refund-policy">Read our refund policy &rarr;</a>
               </p>
             </div>
           </div>
@@ -359,35 +340,30 @@ export default function PricingPage() {
         {/* ===== HOW TO SUBSCRIBE ===== */}
         <section className="steps-section" id="how-to-subscribe">
           <div className="section-container">
-            <h2 className="section-title white">How to Subscribe and Start Watching</h2>
-            <p className="section-intro">Subscribing takes less than two minutes:</p>
+            <h2 className="section-title white">How to Get Your IPTV UK Subscription &mdash; 3 Simple Steps</h2>
+            <p className="section-intro">Start streaming in minutes. No technical setup stress, no delays, and no contract lock-ins.</p>
             <div className="spacer-30"></div>
-            <div className="steps-grid steps-grid-5">
+            <div className="steps-grid">
               <div className="step-card">
                 <div className="step-number">1</div>
-                <p>Select your plan from the options above.</p>
+                <h3>Step 1 &mdash; Choose Your Plan</h3>
+                <p>Pick the plan that suits you best. Every plan includes the full service from day one, and longer plans offer the best savings.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">2</div>
-                <p>Complete your payment securely using [PAYMENT METHODS &mdash; e.g., credit/debit card, PayPal, cryptocurrency].</p>
+                <h3>Step 2 &mdash; Get Your Account in Minutes</h3>
+                <p>As soon as payment is confirmed, your login details are sent by email. No waiting around and no complicated activation process.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">3</div>
-                <p>Check your email for your login credentials (delivered within minutes of payment).</p>
-              </div>
-              <div className="step-card">
-                <div className="step-number">4</div>
-                <p>Download an IPTV app on your device and enter your login details.</p>
-              </div>
-              <div className="step-card">
-                <div className="step-number">5</div>
-                <p>Start watching.</p>
+                <h3>Step 3 &mdash; Start Watching Straight Away</h3>
+                <p>Open your IPTV app, enter your details, and press play. Setup takes under two minutes, and our team is ready to help if needed.</p>
               </div>
             </div>
             <div className="spacer-20"></div>
             <div style={{ textAlign: "center" }}>
               <p className="section-intro">
-                Need help with setup? Our <a href="/setup">step-by-step guides</a> cover every supported device, or contact our support team for personal assistance.
+                Need help with setup? Our <a href="/setup">step-by-step guides</a> cover every supported device.
               </p>
             </div>
           </div>
@@ -423,7 +399,7 @@ export default function PricingPage() {
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
-                    <p>We accept [LIST ALL PAYMENT METHODS]. All transactions are processed securely with [ENCRYPTION/SECURITY DETAILS].</p>
+                    <p>We accept major debit and credit cards. All transactions are processed securely.</p>
                   </div>
                 </div>
                 <div className="faq-item">
@@ -432,7 +408,7 @@ export default function PricingPage() {
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
-                    <p>[YES/NO &mdash; be transparent. If yes, explain how to cancel before renewal. If no, explain how to renew.]</p>
+                    <p>No. There is no automatic renewal. You can renew manually when your current plan ends.</p>
                   </div>
                 </div>
                 <div className="faq-item">
@@ -441,7 +417,7 @@ export default function PricingPage() {
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
-                    <p>[Explain cancellation process clearly. If within guarantee period, explain refund process. If after guarantee period, explain what happens to remaining subscription time.]</p>
+                    <p>You can cancel at any time. If you are within the 30-day money-back guarantee period and not satisfied, contact support for a full refund.</p>
                   </div>
                 </div>
               </div>
@@ -455,10 +431,10 @@ export default function PricingPage() {
           <div className="section-container">
             <h2 className="cta-title">Not Sure Which Plan to Choose?</h2>
             <p className="cta-subtitle">
-              If you are new to IPTV and want to test the service before committing, the 1-month plan is ideal. It gives you full access to everything so you can evaluate the channel quality, streaming reliability, and VOD library with zero long-term commitment.
+              If you are new to IPTV and want to test the service before committing, the 3-month plan is ideal. It gives you full access to everything so you can evaluate channel quality, streaming reliability, and the VOD library with minimal commitment.
             </p>
             <p className="cta-subtitle">
-              If you already know you want IPTV and are looking for the best value, the 12-month plan saves you [X]% compared to paying monthly &mdash; that is [£X] saved over the year.
+              If you already know you want IPTV and are looking for the best value, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.
             </p>
             <div className="spacer-20"></div>
             <a href="#pricing" className="btn-primary btn-large">Subscribe Now &rarr;</a>

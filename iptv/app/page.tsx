@@ -6,14 +6,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+  title: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
   description:
-    "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, [X]-day guarantee. Subscribe now.",
+    "Buy Premium IPTV UK with 37,000+ live channels and 198,000+ films and series in 4K UHD. Zero buffering, instant activation, and a 30-day money-back guarantee.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+    title: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
     description:
-      "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, [X]-day guarantee. Subscribe now.",
+      "Buy Premium IPTV UK with 37,000+ live channels and 198,000+ films and series in 4K UHD. Zero buffering, instant activation, and a 30-day money-back guarantee.",
     url: "https://iptv-premium-uk.tv/",
     type: "website",
     locale: "en_GB",
@@ -59,12 +59,12 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://iptv-premium-uk.tv/#webpage",
       url: "https://iptv-premium-uk.tv",
-      name: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+      name: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
       inLanguage: "en-GB",
       isPartOf: { "@id": "https://iptv-premium-uk.tv/#website" },
       about: { "@id": "https://iptv-premium-uk.tv/#organization" },
       description:
-        "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD.",
+        "Premium IPTV UK with 37,000+ live channels, 198,000+ films and series, 4K UHD quality, and instant activation.",
     },
     {
       "@type": "BreadcrumbList",
@@ -83,50 +83,82 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is IPTV and how does it differ from traditional TV?",
+          name: "Is Premium IPTV UK easy to set up?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through a traditional aerial, satellite dish, or cable. This means you can watch live TV, on-demand films, and catch-up content on any internet-connected device — from Smart TVs and streaming sticks to phones and laptops. The experience is very similar to services like Sky Go or BBC iPlayer, but with a much wider channel selection at a lower price.",
+            text: "Yes. Setup takes less than two minutes. You receive your login details by email right after ordering, enter them in your IPTV app, and start watching immediately.",
           },
         },
         {
           "@type": "Question",
-          name: "Which devices can I use?",
+          name: "What devices work with your IPTV subscription?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Our service works on Amazon Firestick, Android TV boxes, Android phones and tablets, iPhones and iPads, Samsung/LG/Sony Smart TVs, Windows and Mac computers, MAG devices, and Enigma2 receivers. You can use any IPTV-compatible app including [APP NAMES].",
+            text: "It works on Smart TVs, Amazon Firestick, Android TV boxes, iPhone, iPad, Android phones, MAG boxes, Formuler devices, Windows PCs, and Mac computers.",
           },
         },
         {
           "@type": "Question",
-          name: "Is there a free trial available?",
+          name: "How fast does my broadband need to be?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "[YES/NO — include details if applicable]",
+            text: "For HD streaming, 10 Mbps is enough. For 4K UHD streaming, we recommend 25 Mbps or faster for the best experience.",
           },
         },
         {
           "@type": "Question",
-          name: "What happens if I am not satisfied?",
+          name: "Is there a minimum contract?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You are covered by our [X]-day money-back guarantee. If the service does not meet your expectations for any reason, contact our support team and we will process a full refund.",
+            text: "No. There are no contracts or hidden fees. Pick any plan, pay once, and renew only when you are ready.",
           },
         },
         {
           "@type": "Question",
-          name: "How quickly will I receive access after payment?",
+          name: "What if I am not happy with the service?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Access is activated within minutes. You will receive your login credentials by email immediately after your payment is confirmed.",
+            text: "Every plan includes a 30-day money-back guarantee. If you are not satisfied, contact support within 30 days for a full refund.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I watch on more than one device at the same time?",
+          name: "How many screens can I use at once?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Your subscription supports [X] simultaneous connections, so multiple people in your household can watch different channels on different devices at the same time.",
+            text: "All plans include up to 5 simultaneous screens, so the whole household can watch different content at the same time.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you include UK sports channels?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Sky Sports, BT Sport, TNT Sports, and more are included, with live coverage of the Premier League, Formula 1, UFC, boxing, and other major events.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is your IPTV service uptime?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our platform is built for reliability with 99.9% uptime, backed by anti-freeze technology and 24/7 monitoring.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What happens when my plan runs out?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Your service stops at the end of your subscription term. There are no automatic surprise renewals, and you can renew whenever you want.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is support available if I need help?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Our UK-based support team is available 24/7 via live chat, email, and WhatsApp.",
           },
         },
       ],
@@ -146,22 +178,22 @@ export default function Home() {
           <div className="hero-container">
             <div className="hero-content">
               <h1 className="hero-title">
-                Premium IPTV Subscription for the UK &mdash; Watch Everything, Pay Less
+                Premium IPTV UK &mdash; The #1 IPTV Subscription in 2026
               </h1>
               <p className="hero-subtitle">
-                Premium IPTV delivers a premium IPTV subscription built specifically for viewers in the United Kingdom. With 37,000+ live channels &mdash; including every major British broadcaster and premium sports network &mdash; plus 198,000+ films and series on demand, you get complete entertainment at a fraction of traditional TV costs.
+                Watch over 37,000 live channels in stunning 4K quality. No buffering. No contracts. Fast, stable IPTV built for UK viewers.
               </p>
               <p className="hero-subtitle">
-                Whether you want to watch the Premier League, catch up on BBC dramas, follow Sky Sports coverage, or enjoy the latest cinema releases from your sofa, your subscription covers it all. One account, every device, instant activation.
+                Get every major UK channel, all premium sports, and 198,000+ films and series on demand. Activate in minutes and stream on up to 5 screens at the same time.
               </p>
               <div className="hero-cta">
                 <a href="/pricing" className="btn-primary btn-large">
-                  View Our Subscription Plans &rarr;
+                  Get Started Now &mdash; 30-Day Money Back Guarantee
                 </a>
               </div>
               <div className="hero-guarantees">
                 <p>
-                  <span className="check-icon">&#10003;</span> [X]-Day Money-Back Guarantee
+                  <span className="check-icon">&#10003;</span> 30-Day Money-Back Guarantee
                 </p>
                 <p>
                   <span className="check-icon">&#10003;</span> 24/7 UK Support
@@ -190,10 +222,10 @@ export default function Home() {
         <section className="why-us-section" id="why-us">
           <div className="section-container">
             <h2 className="section-title white">
-              Why UK Viewers Choose Premium IPTV
+              The Best IPTV UK Service &mdash; Why We Are Different
             </h2>
             <p className="section-intro">
-              Choosing an IPTV provider in the UK market can feel overwhelming. Dozens of services promise thousands of channels, but few deliver the reliability, quality, and support that British viewers expect. Here is what sets our IPTV subscription apart.
+              Most IPTV providers fail the same way: slow streams, frozen screens, and no support when you need it. We built Premium IPTV UK to fix all of that with stable streaming, real UK support, and full-feature plans with no hidden extras.
             </p>
             <div className="spacer-30"></div>
             <div className="features-grid">
@@ -201,36 +233,36 @@ export default function Home() {
                 <div className="feature-icon">
                   <Icon name="flag" />
                 </div>
-                <h3 className="feature-title">Genuine UK Focus</h3>
+                <h3 className="feature-title">4K UHD on Every Screen</h3>
                 <p className="feature-desc">
-                  Unlike services that list &ldquo;worldwide channels&rdquo; as their primary selling point, we built our channel lineup around what UK households actually watch. That means comprehensive coverage of BBC, ITV, Channel 4, Channel 5, Sky, BT Sport, TNT Sports, and Virgin Media channels &mdash; not a global list where you have to hunt for British content.
+                  Stream every match, film, and series in crystal-clear 4K Ultra HD on Smart TVs, phones, tablets, and projectors. The picture stays sharp, vivid, and smooth on every device.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
                   <Icon name="shield-halved" />
                 </div>
-                <h3 className="feature-title">[X]-Day Money-Back Guarantee</h3>
+                <h3 className="feature-title">Zero Buffering with Anti-Freeze 9.0</h3>
                 <p className="feature-desc">
-                  We stand behind our service with a no-questions-asked [X]-day money-back guarantee. If you are not completely satisfied with the streaming quality, channel selection, or anything else, you receive a full refund. No hoops, no delays. <a href="/refund-policy">Read our refund policy &rarr;</a>
+                  Our anti-freeze technology keeps streams stable during live sports and peak evening hours. With 99.9% uptime and UK-optimized servers, your viewing stays rock solid.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
                   <Icon name="bolt" />
                 </div>
-                <h3 className="feature-title">Instant Activation</h3>
+                <h3 className="feature-title">Built-In VPN and Instant Activation</h3>
                 <p className="feature-desc">
-                  Your IPTV subscription is activated within minutes of purchase. There is no waiting for email confirmations, no manual setup by a support agent, and no delays. You place your order, receive your login credentials, and start watching immediately.
+                  Your stream is private from the moment you log in thanks to built-in VPN protection. Order today, receive your account by email within minutes, and start watching right away.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
                   <Icon name="headset" />
                 </div>
-                <h3 className="feature-title">Dedicated UK Support</h3>
+                <h3 className="feature-title">24/7 UK Support and 30-Day Guarantee</h3>
                 <p className="feature-desc">
-                  Our support team understands the UK market and is available [HOURS/24/7] via [CHANNELS: live chat, email, WhatsApp]. Whether you need help with setup, have a billing question, or want advice on the best plan for your household, you get a real person who speaks your language and understands your needs.
+                  Our UK team is available 24/7 on live chat, email, and WhatsApp. Every plan is backed by a full 30-day money-back guarantee, so you can subscribe with confidence. <a href="/refund-policy">Read our refund policy &rarr;</a>
                 </p>
               </div>
             </div>
@@ -243,11 +275,11 @@ export default function Home() {
             <div className="provider-grid">
               <div className="provider-text">
                 <h2 className="provider-title">
-                  What You Get with Your IPTV UK Subscription
+                  What You Get With Your IPTV Subscription
                 </h2>
                 <div className="provider-copy">
                   <p className="provider-desc">
-                    Every Premium IPTV subscription includes the following, regardless of which plan you choose:
+                    Every plan includes the full service from day one, with no hidden fees and no locked features.
                   </p>
                 </div>
               </div>
@@ -257,43 +289,43 @@ export default function Home() {
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>37,000+ Live TV Channels.</strong> Full access to UK entertainment, sports, news, documentaries, children&apos;s programming, and international channels. We carry every major British network alongside premium sports, cinema, and lifestyle channels. <a href="/channels">Browse our full channel list &rarr;</a>
+                        <strong>37,000+ Live UK and International Channels.</strong> BBC, ITV, Channel 4, Channel 5, Sky Sports, BT Sport, TNT Sports, Sky Cinema, and more. We carry the channels UK households actually watch. <a href="/channels">Browse our full channel list &rarr;</a>
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>198,000+ Films and Series On Demand.</strong> Our VOD library is updated daily with the latest cinema releases, box sets, and classic films. Search by genre, year, or title and start watching instantly &mdash; no additional fees, no per-title charges.
+                        <strong>198,000+ Films and Series On Demand.</strong> New cinema releases, full box sets, and timeless classics are all included. Watch what you want, when you want, with no extra charges.
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>Electronic Programme Guide (EPG).</strong> A full, up-to-date EPG is included with every subscription. Browse what is on now, check tonight&apos;s schedule, or plan your viewing for the week ahead &mdash; exactly as you would with a traditional set-top box.
+                        <strong>Every Sport Live in 4K.</strong> Premier League, Champions League, Formula 1, UFC, boxing, cricket, rugby, and more. Never miss a major event with smooth live coverage.
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>[X]-Day Catch-Up TV.</strong> Missed last night&apos;s match or forgot to watch a programme? Our catch-up feature lets you go back up to [X] days and watch content you missed, so you never fall behind on the shows that matter to you.
+                        <strong>7-Day Catch-Up TV and Full EPG.</strong> Check what is on now, plan your week, and replay recent programmes you missed. IPTV convenience that feels like premium cable.
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>HD, Full HD &amp; 4K Quality.</strong> Every channel that broadcasts in high definition is delivered in the highest quality available. Premium channels stream in Full HD or 4K where supported, and our adaptive streaming technology adjusts to your internet connection to prevent buffering.
+                        <strong>Built-In VPN and Anti-Freeze 9.0.</strong> Your stream stays private, secure, and stable with zero-freeze performance and 99.9% uptime across the platform.
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        <strong>Multi-Device Access.</strong> Watch on your Amazon Firestick, Android phone or tablet, iPhone, iPad, Smart TV (Samsung, LG, Sony), Windows or Mac computer, MAG box, or any device that supports IPTV apps. Your subscription works across [X] devices simultaneously, so different members of your household can watch different channels at the same time. <a href="/setup">See full device compatibility &rarr;</a>
+                        <strong>Works on Every Device You Own.</strong> Smart TV, Firestick, Android TV box, iPhone, iPad, Android phone, MAG, Formuler, PC, and Mac. One plan covers up to 5 simultaneous screens. <a href="/setup">See full device compatibility &rarr;</a>
                       </span>
                     </li>
                     <li>
                       <Icon name="caret-square-right" />{" "}
                       <span>
-                        [ADDITIONAL USPs &mdash; e.g., built-in VPN, anti-freeze technology, etc.]
+                        <strong>No Contracts and 30-Day Money-Back Guarantee.</strong> Cancel any time, no hidden fees, and get a full refund within 30 days if the service is not right for you. <a href="/pricing">View plans and save more on longer subscriptions &rarr;</a>
                       </span>
                     </li>
                   </ul>
@@ -307,10 +339,10 @@ export default function Home() {
         <section className="channels-section" id="channels">
           <div className="section-container">
             <h2 className="section-title white">
-              UK Channels That Matter to You
+              37,000+ UK and International Channels That Matter to You
             </h2>
             <p className="section-intro">
-              We carry the channels British viewers actually search for. Here is a snapshot of what is included:
+              Every major British channel is included, plus top international networks, premium sports, and a huge movie lineup.
             </p>
             <div className="spacer-30"></div>
             <div className="channels-grid">
@@ -319,35 +351,35 @@ export default function Home() {
                   <Icon name="tv" />
                 </div>
                 <h3>British Entertainment</h3>
-                <p>BBC One, BBC Two, ITV1, ITV2, ITV3, ITV4, Channel 4, E4, Channel 5, 5Star, Dave, UKTV Gold, Sky One, Sky Atlantic, Comedy Central UK, and more.</p>
+                <p>BBC One, BBC Two, ITV1, ITV2, ITV3, ITV4, Channel 4, E4, Channel 5, Sky Atlantic, Sky Max, Dave, UKTV Gold, and more.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
                   <Icon name="futbol" />
                 </div>
                 <h3>UK Sports</h3>
-                <p>Sky Sports Main Event, Sky Sports Premier League, Sky Sports Football, Sky Sports F1, Sky Sports Cricket, Sky Sports Golf, TNT Sports 1-4, BT Sport, BBC Sport, Eurosport 1 &amp; 2, and all major sporting events including the Premier League, Champions League, Six Nations, The Ashes, Formula 1, and Wimbledon.</p>
+                <p>Sky Sports, TNT Sports, BT Sport, Eurosport, and major events including Premier League, Champions League, Formula 1, UFC, boxing, cricket, and rugby.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
                   <Icon name="film" />
                 </div>
                 <h3>Movies</h3>
-                <p>Sky Cinema Premiere, Sky Cinema Action, Sky Cinema Comedy, Sky Cinema Sci-Fi, Sky Cinema Family, Film4, and access to our full on-demand film library.</p>
+                <p>Sky Cinema channels, Film4, blockbuster premieres, and instant access to our 198,000+ on-demand films and series library.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
                   <Icon name="newspaper" />
                 </div>
                 <h3>News &amp; Documentary</h3>
-                <p>BBC News, Sky News, ITV News, CNN, Al Jazeera, BBC Four, National Geographic, Discovery, History Channel.</p>
+                <p>BBC News, Sky News, ITV News, CNN, BBC Four, National Geographic, Discovery, and History Channel.</p>
               </div>
               <div className="channel-category">
                 <div className="channel-category-icon">
                   <Icon name="child" />
                 </div>
                 <h3>Kids</h3>
-                <p>CBeebies, CBBC, Cartoon Network, Nickelodeon, Disney Channel, Baby TV.</p>
+                <p>CBeebies, CBBC, Cartoon Network, Nickelodeon, Disney Channel, BabyTV, and family-friendly channels for all ages.</p>
               </div>
             </div>
             <div className="spacer-30"></div>
@@ -363,27 +395,27 @@ export default function Home() {
         <section className="steps-section" id="how-it-works">
           <div className="section-container">
             <h2 className="section-title white">
-              How It Works &mdash; Three Simple Steps
+              How to Get Your IPTV UK Subscription &mdash; 3 Simple Steps
             </h2>
             <p className="section-intro">
-              Getting started with your IPTV subscription takes less than five minutes, and you do not need any technical knowledge.
+              Start streaming in minutes. No technical setup stress, no delays, and no contract lock-ins.
             </p>
             <div className="spacer-30"></div>
             <div className="steps-grid">
               <div className="step-card">
                 <div className="step-number">1</div>
-                <h3>Choose Your Plan</h3>
-                <p>Visit our <a href="/pricing">pricing page</a> and select the subscription length that suits you &mdash; monthly, quarterly, six-month, or annual. Every plan includes the same full channel lineup and features.</p>
+                <h3>Step 1 &mdash; Choose Your Plan</h3>
+                <p>Pick the plan that suits you best on our <a href="/pricing">pricing page</a>. Every plan includes the full service from day one, and longer plans offer the best savings.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">2</div>
-                <h3>Receive Your Login</h3>
-                <p>After payment, you receive your IPTV login credentials by email within minutes. We also send a quick-start guide with setup instructions for your specific device.</p>
+                <h3>Step 2 &mdash; Get Your Account in Minutes</h3>
+                <p>As soon as payment is confirmed, your login details are sent by email. No waiting around and no complicated activation process.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">3</div>
-                <h3>Start Watching</h3>
-                <p>Download the recommended IPTV app for your device, enter your login details, and begin streaming. If you need any help during setup, our support team is standing by to walk you through it. <a href="/setup">View our step-by-step setup guides &rarr;</a></p>
+                <h3>Step 3 &mdash; Start Watching Straight Away</h3>
+                <p>Open your IPTV app, enter your details, and press play. Setup takes under two minutes, and our team is ready to help if needed. <a href="/setup">View our step-by-step setup guides &rarr;</a></p>
               </div>
             </div>
           </div>
@@ -394,10 +426,10 @@ export default function Home() {
           <div className="pricing-bg-overlay"></div>
           <div className="section-container">
             <h2 className="section-title white">
-              Flexible Plans for Every Budget
+              Choose Your Premium IPTV UK Plan &mdash; Instant Activation
             </h2>
             <h3 className="pricing-subtitle">
-              We offer subscription plans from [£X.XX/month] with no contracts and no hidden fees. Every plan includes the full channel list, VOD library, EPG, and catch-up TV. The only difference is the subscription length &mdash; and the longer you subscribe, the more you save.
+              Every plan includes 4K UHD streams, built-in VPN, anti-freeze technology, full VOD access, all sports channels, 24/7 UK support, and a 30-day money-back guarantee. No hidden fees. No contracts. Cancel any time.
             </h3>
 
             <div className="plans-section">
@@ -432,11 +464,11 @@ export default function Home() {
                   <ul className="plan-features">
                     <li>37,000+ live channels with full UK coverage</li>
                     <li>198,000+ films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>Multi-device access &mdash; [X] simultaneous connections</li>
-                    <li>[HOURS/24/7] dedicated UK support</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
                     <li>Instant activation</li>
                   </ul>
                 </div>
@@ -462,11 +494,11 @@ export default function Home() {
                   <ul className="plan-features">
                     <li>37,000+ live channels with full UK coverage</li>
                     <li>198,000+ films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>Multi-device access &mdash; [X] simultaneous connections</li>
-                    <li>[HOURS/24/7] dedicated UK support</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
                     <li>Instant activation</li>
                   </ul>
                 </div>
@@ -493,11 +525,11 @@ export default function Home() {
                   <ul className="plan-features">
                     <li>37,000+ live channels with full UK coverage</li>
                     <li>198,000+ films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>Multi-device access &mdash; [X] simultaneous connections</li>
-                    <li>[HOURS/24/7] dedicated UK support</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
                     <li>Instant activation</li>
                   </ul>
                 </div>
@@ -523,11 +555,11 @@ export default function Home() {
                   <ul className="plan-features">
                     <li>37,000+ live channels with full UK coverage</li>
                     <li>198,000+ films, series, and documentaries on demand</li>
-                    <li>Full EPG with [X]-day catch-up TV</li>
+                    <li>Full EPG with 7-day catch-up TV</li>
                     <li>HD, Full HD &amp; 4K streaming quality</li>
-                    <li>Multi-device access &mdash; [X] simultaneous connections</li>
-                    <li>[HOURS/24/7] dedicated UK support</li>
-                    <li>[X]-day money-back guarantee</li>
+                    <li>Multi-device access &mdash; up to 5 simultaneous connections</li>
+                    <li>24/7 dedicated UK support</li>
+                    <li>30-day money-back guarantee</li>
                     <li>Instant activation</li>
                   </ul>
                 </div>
@@ -535,7 +567,7 @@ export default function Home() {
             </div>
 
             <div className="pricing-note">
-              <p>All payments are processed securely. We accept [PAYMENT METHODS]. Your subscription activates instantly and you are protected by our [X]-day money-back guarantee.</p>
+              <p>All payments are processed securely. We accept major debit and credit cards. Your subscription activates instantly and is protected by our 30-day money-back guarantee.</p>
               <div className="spacer-20"></div>
               <a href="/pricing" className="btn-primary btn-large">
                 View All Plans &amp; Subscribe &rarr;
@@ -569,8 +601,8 @@ export default function Home() {
                 />
               </div>
               <div className="devices-text">
-                <h2 className="devices-title">Premium IPTV UK Quality</h2>
-                <h3 className="devices-subtitle">On Every Screen in Your Home</h3>
+                <h2 className="devices-title">Compatible With All Devices &mdash; No Box Required</h2>
+                <h3 className="devices-subtitle">One Subscription. Every Screen You Own.</h3>
                 <div className="spacer-20"></div>
                 <Image
                   src="/devices-2048x699-1.webp"
@@ -582,21 +614,18 @@ export default function Home() {
                   className="devices-img-mobile mobile-only"
                 />
                 <p className="devices-desc">
-                  Premium IPTV delivers flawless 4K playback on Amazon Fire Stick 4K,
-                  Samsung and LG Smart TVs, Android TV, Nvidia Shield Pro, Apple devices,
-                  MAG and Formuler boxes, Xbox, Windows, and web browsers. For the sharpest
-                  possible picture, we recommend 4K-capable devices connected via HDMI 2.0
-                  or above. Our IPTV player installs in minutes, with optional
-                  remote setup assistance from our dedicated support team at no
-                  extra charge. <a href="/setup">Set up in minutes &rarr;</a>
+                  Premium IPTV UK works on everything you already own: Samsung,
+                  LG, Sony, Hisense, and Panasonic Smart TVs, Amazon Firestick,
+                  Fire TV, Chromecast, Roku, MAG boxes, Formuler devices, Android TV boxes,
+                  iPhone, iPad, Android phones, Windows PCs, and Mac. <a href="/setup">Set up in minutes &rarr;</a>
                 </p>
                 <p className="devices-desc">
-                  Fire Stick | Samsung Smart TV | Android TV | iOS | MAG Box | Nvidia Shield
-                  | Android | IPTV Smarters | Xbox | Web Player | LG Smart TV | Windows
+                  Apps supported: IPTV Smarters Pro | TiviMate | GSE Smart IPTV |
+                  Perfect Player | VLC. One plan supports up to 5 screens at once.
                 </p>
                 <div className="spacer-30"></div>
                 <a href="/setup" className="btn-primary btn-large">
-                  View Setup Guides
+                  View Device Setup Guides
                 </a>
               </div>
             </div>
@@ -618,10 +647,10 @@ export default function Home() {
               />
             </div>
             <h2 className="section-title white">
-              What Our Subscribers Say
+              What UK Customers Say About Our IPTV Service
             </h2>
             <p className="testimonials-subtitle">
-              Real feedback from UK viewers who chose Premium IPTV.
+              Trusted by 50,000+ happy UK customers across the country.
             </p>
 
             <div className="testimonials-slider" id="testimonials-slider">
@@ -635,10 +664,10 @@ export default function Home() {
                     <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
-                    &ldquo;I&apos;ve been using Premium IPTV for eight months and the quality is superb. Every Premier League game in crisp HD with zero buffering. Far better value than paying for Sky.&rdquo;
+                    &ldquo;Best IPTV I have ever used. The picture is crystal clear. Not a single freeze in 3 months. The Premier League coverage is incredible. I would never go back to Sky.&rdquo;
                   </p>
                   <div className="testimonial-author">
-                    <h4>James T., Premium IPTV subscriber since August 2024</h4>
+                    <h4>James T. &mdash; Manchester</h4>
                   </div>
                 </div>
                 <div className="testimonial-card">
@@ -650,10 +679,10 @@ export default function Home() {
                     <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
-                    &ldquo;Switched from a cable package and I can&apos;t believe the difference in value. Thousands of channels and I can watch everything from BBC to Sky Atlantic. Setup took about five minutes.&rdquo;
+                    &ldquo;I switched from Sky last year and I am saving over &pound;80 a month. Every channel I need is here. The setup took 5 minutes. Support was brilliant when I had a question.&rdquo;
                   </p>
                   <div className="testimonial-author">
-                    <h4>Sarah M., Premium IPTV subscriber since January 2025</h4>
+                    <h4>Sarah K. &mdash; London</h4>
                   </div>
                 </div>
                 <div className="testimonial-card">
@@ -665,10 +694,55 @@ export default function Home() {
                     <Icon name="star" />
                   </div>
                   <p className="testimonial-text">
-                    &ldquo;The catch-up feature is what sold me. Missed a drama on ITV? No problem. The EPG is spot on too &mdash; works exactly like a proper set-top box. Brilliant service all round.&rdquo;
+                    &ldquo;The 4K sports streams are brilliant. I expected buffering during big games. It never happened. The best IPTV service I have tried.&rdquo;
                   </p>
                   <div className="testimonial-author">
-                    <h4>David K., Premium IPTV subscriber since October 2024</h4>
+                    <h4>Dave R. &mdash; Birmingham</h4>
+                  </div>
+                </div>
+                <div className="testimonial-card">
+                  <div className="testimonial-stars">
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                  </div>
+                  <p className="testimonial-text">
+                    &ldquo;I tried 3 different IPTV providers before finding this one. Nothing came close. The built-in VPN is a great touch. Great value for money.&rdquo;
+                  </p>
+                  <div className="testimonial-author">
+                    <h4>Emma L. &mdash; Leeds</h4>
+                  </div>
+                </div>
+                <div className="testimonial-card">
+                  <div className="testimonial-stars">
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                  </div>
+                  <p className="testimonial-text">
+                    &ldquo;I was not sure at first so I chose the 1 month plan. It won me over in the first hour. A cheap IPTV subscription that delivers premium quality.&rdquo;
+                  </p>
+                  <div className="testimonial-author">
+                    <h4>Paul M. &mdash; Glasgow</h4>
+                  </div>
+                </div>
+                <div className="testimonial-card">
+                  <div className="testimonial-stars">
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                    <Icon name="star" />
+                  </div>
+                  <p className="testimonial-text">
+                    &ldquo;The VOD library is massive. My whole family uses it now. Kids watch cartoons, my husband watches sport, and I watch box sets. One plan covers everyone.&rdquo;
+                  </p>
+                  <div className="testimonial-author">
+                    <h4>Rachel O. &mdash; Bristol</h4>
                   </div>
                 </div>
               </div>
@@ -685,71 +759,115 @@ export default function Home() {
         <section className="seo-section" id="faq">
           <div className="section-container">
             <div className="seo-content">
-              <h2>Frequently Asked Questions</h2>
+              <h2>Your Questions About IPTV UK &mdash; Answered</h2>
               <div className="faq-accordion">
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>What is IPTV and how does it differ from traditional TV?</span>
+                    <span>Is Premium IPTV UK easy to set up?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through a traditional aerial, satellite dish, or cable. This means you can watch live TV, on-demand films, and catch-up content on any internet-connected device &mdash; from Smart TVs and streaming sticks to phones and laptops. The experience is very similar to services like Sky Go or BBC iPlayer, but with a much wider channel selection at a lower price. <a href="/iptv-subscription-guide">Read our full guide to IPTV subscriptions &rarr;</a>
+                      Yes. Setup takes less than 2 minutes. You receive your login details by email straight after ordering, open your IPTV app, enter the details, and start watching immediately. <a href="/setup">See full setup guides &rarr;</a>
                     </p>
                   </div>
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Which devices can I use?</span>
+                    <span>What devices work with your IPTV subscription?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      Our service works on Amazon Firestick, Android TV boxes, Android phones and tablets, iPhones and iPads, Samsung/LG/Sony Smart TVs, Windows and Mac computers, MAG devices, and Enigma2 receivers. You can use any IPTV-compatible app including [APP NAMES]. <a href="/setup">See our complete device setup guides &rarr;</a>
+                      It works on Smart TVs, Firestick, Android TV boxes, iPhones, iPads, Android phones, MAG devices, Formuler boxes, Windows PCs, and Mac computers. <a href="/setup">See our complete device setup guides &rarr;</a>
                     </p>
                   </div>
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Is there a free trial available?</span>
+                    <span>How fast does my broadband need to be?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      [YES/NO &mdash; include details if applicable]
+                      For HD streams, 10 Mbps is enough. For 4K UHD, we recommend 25 Mbps or faster for the best experience.
                     </p>
                   </div>
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>What happens if I am not satisfied?</span>
+                    <span>Is there a minimum contract?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      You are covered by our [X]-day money-back guarantee. If the service does not meet your expectations for any reason, contact our support team and we will process a full refund. <a href="/refund-policy">View our refund policy &rarr;</a>
+                      No. There are no contracts and no hidden fees. Pick any plan, pay once, and renew only when you are ready. <a href="/pricing">View all plans &rarr;</a>
                     </p>
                   </div>
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>How quickly will I receive access after payment?</span>
+                    <span>What if I am not happy with the service?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      Access is activated within minutes. You will receive your login credentials by email immediately after your payment is confirmed.
+                      Every plan includes a 30-day money-back guarantee. If you are not satisfied for any reason, contact us within 30 days and we will issue a full refund. <a href="/refund-policy">View our refund policy &rarr;</a>
                     </p>
                   </div>
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Can I watch on more than one device at the same time?</span>
+                    <span>How many screens can I use at once?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
                     <p>
-                      Yes. Your subscription supports [X] simultaneous connections, so multiple people in your household can watch different channels on different devices at the same time.
+                      All plans include up to 5 simultaneous screens, which is perfect for families who want to watch different channels at the same time.
+                    </p>
+                  </div>
+                </div>
+                <div className="faq-item">
+                  <button className="faq-question" aria-expanded="false">
+                    <span>Do you include UK sports channels?</span>
+                    <Icon name="chevron-down" />
+                  </button>
+                  <div className="faq-answer">
+                    <p>
+                      Yes. Sky Sports, BT Sport, TNT Sports, and many more are included, with live coverage of Premier League football, Formula 1, UFC, boxing, and other major events. <a href="/channels">Explore the channel lineup &rarr;</a>
+                    </p>
+                  </div>
+                </div>
+                <div className="faq-item">
+                  <button className="faq-question" aria-expanded="false">
+                    <span>What is your IPTV service uptime?</span>
+                    <Icon name="chevron-down" />
+                  </button>
+                  <div className="faq-answer">
+                    <p>
+                      We run on a 99.9% uptime target with anti-freeze technology and 24/7 monitoring to keep streams stable throughout the day.
+                    </p>
+                  </div>
+                </div>
+                <div className="faq-item">
+                  <button className="faq-question" aria-expanded="false">
+                    <span>What happens when my plan runs out?</span>
+                    <Icon name="chevron-down" />
+                  </button>
+                  <div className="faq-answer">
+                    <p>
+                      Nothing changes in your account details. The service simply stops at the end of your term. There are no surprise renewals or hidden charges.
+                    </p>
+                  </div>
+                </div>
+                <div className="faq-item">
+                  <button className="faq-question" aria-expanded="false">
+                    <span>Is there support if I need help?</span>
+                    <Icon name="chevron-down" />
+                  </button>
+                  <div className="faq-answer">
+                    <p>
+                      Yes. Our UK-based support team is available 24 hours a day, 7 days a week via live chat, email, and WhatsApp.
                     </p>
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const schedule =
   typeof window !== "undefined" && "requestIdleCallback" in window
@@ -8,6 +9,8 @@ const schedule =
     : (cb: () => void) => window.setTimeout(cb, 1);
 
 export default function SiteInteractions() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const cleanups: Array<() => void> = [];
 
@@ -18,13 +21,16 @@ export default function SiteInteractions() {
     const mobileCleanup = initMobileMenu();
     if (mobileCleanup) cleanups.push(mobileCleanup);
 
+    // FAQ should be interactive immediately on navigation.
+    const faqCleanup = initFaqAccordion();
+    if (faqCleanup) cleanups.push(faqCleanup);
+
     // Non-critical: defer to idle time to reduce TBT
     const idleIds: number[] = [];
 
     const deferredInits = [
       initSmoothScroll,
       initPricingToggle,
-      initFaqAccordion,
       initScrollToTop,
     ];
 
@@ -58,7 +64,7 @@ export default function SiteInteractions() {
       idleIds.forEach((id) => cancel(id));
       cleanups.forEach((cleanup) => cleanup());
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }
