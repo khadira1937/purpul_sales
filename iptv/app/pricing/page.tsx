@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Pricing Plans | Premium IPTV UK",
@@ -166,10 +167,10 @@ export default function PricingPage() {
           <div className="pricing-bg-overlay"></div>
           <div className="section-container">
             <h1 className="section-title white">
-              Choose Your Premium IPTV UK Plan &mdash; Instant Activation
+              IPTV Premium UK Plans 2026 &mdash; Best IPTV Subscription UK Prices | Instant Activation
             </h1>
             <h2 className="pricing-subtitle">
-              Every plan includes 4K UHD streams, built-in VPN, anti-freeze technology, full VOD access, all sports channels, 24/7 UK support, and a 30-day money-back guarantee. No hidden fees. No contracts. Cancel any time.
+              Choose the perfect IPTV Premium UK plan for your needs in 2026. Every IPTV Premium UK subscription includes 37,000+ live UK channels, 198,000+ movies & series in 4K, built-in VPN, anti-freeze technology, 24/7 UK support, and full compatibility with all devices. No contracts, no hidden fees, and 30-day money-back guarantee on every IPTV Premium UK plan.
             </h2>
 
             <div className="spacer-30"></div>
@@ -185,6 +186,7 @@ export default function PricingPage() {
               </div>
 
               <div className="plans-grid" id="plans-grid">
+
                 <div className="plan-card" data-plan="3">
                   <h4 className="plan-title" data-base-text="3 Months">
                     3 Months
@@ -285,7 +287,7 @@ export default function PricingPage() {
             </div>
 
             <div className="pricing-note">
-              <p>All payments are processed securely. We accept major debit and credit cards. Your subscription activates instantly and is protected by our 30-day money-back guarantee.</p>
+              <p>All payments are processed securely. We accept major debit and credit cards. Your IPTV Premium UK subscription activates instantly and is protected by our 30-day money-back guarantee.</p>
             </div>
           </div>
         </section>
@@ -293,9 +295,9 @@ export default function PricingPage() {
         {/* ===== WHAT IS INCLUDED ===== */}
         <section className="why-us-section" id="included">
           <div className="section-container">
-            <h2 className="section-title white">What Is Included in Every Plan</h2>
+            <h2 className="section-title white">What Is Included in Every IPTV Premium UK Plan</h2>
             <p className="section-intro">
-              Every subscription &mdash; whether monthly or annual &mdash; includes the complete Premium IPTV experience with no feature restrictions:
+              Every IPTV Premium UK subscription &mdash; whether monthly or annual &mdash; includes the complete Premium IPTV experience with no feature restrictions.
             </p>
             <div className="spacer-30"></div>
             <div className="features-grid">
@@ -340,7 +342,7 @@ export default function PricingPage() {
         {/* ===== HOW TO SUBSCRIBE ===== */}
         <section className="steps-section" id="how-to-subscribe">
           <div className="section-container">
-            <h2 className="section-title white">How to Get Your IPTV UK Subscription &mdash; 3 Simple Steps</h2>
+            <h2 className="section-title white">How to Get Your IPTV Premium UK Subscription &mdash; 3 Simple Steps</h2>
             <p className="section-intro">Start streaming in minutes. No technical setup stress, no delays, and no contract lock-ins.</p>
             <div className="spacer-30"></div>
             <div className="steps-grid">
@@ -363,7 +365,7 @@ export default function PricingPage() {
             <div className="spacer-20"></div>
             <div style={{ textAlign: "center" }}>
               <p className="section-intro">
-                Need help with setup? Our <a href="/setup">step-by-step guides</a> cover every supported device.
+                Need help with setup? Our <Link href="/setup">step-by-step guides</Link> cover every supported device.
               </p>
             </div>
           </div>
@@ -377,7 +379,7 @@ export default function PricingPage() {
               <div className="faq-accordion">
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Do I need to pay for anything beyond the subscription price?</span>
+                    <span>Do I need to pay for anything beyond the IPTV Premium UK subscription price?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
@@ -386,7 +388,7 @@ export default function PricingPage() {
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Can I upgrade or change my plan later?</span>
+                    <span>Can I upgrade or change my IPTV Premium UK plan later?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
@@ -395,7 +397,7 @@ export default function PricingPage() {
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>What payment methods do you accept?</span>
+                    <span>What payment methods do you accept for IPTV Premium UK?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
@@ -404,7 +406,7 @@ export default function PricingPage() {
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>Is there an auto-renewal?</span>
+                    <span>Is there an auto-renewal on IPTV Premium UK?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
@@ -413,7 +415,7 @@ export default function PricingPage() {
                 </div>
                 <div className="faq-item">
                   <button className="faq-question" aria-expanded="false">
-                    <span>What if I want to cancel?</span>
+                    <span>What if I want to cancel my IPTV Premium UK subscription?</span>
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
@@ -437,14 +439,14 @@ export default function PricingPage() {
               If you already know you want IPTV and are looking for the best value, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.
             </p>
             <div className="spacer-20"></div>
-            <a href="#pricing" className="btn-primary btn-large">Subscribe Now &rarr;</a>
+            <Link href="#pricing" className="btn-primary btn-medium">Subscribe Now &rarr;</Link>
             <div className="spacer-20"></div>
             <p className="cta-subtitle">
-              Have questions before you decide? <a href="/faq" style={{ color: "var(--purple-3)", fontWeight: 700 }}>Check our FAQ</a> or <a href="mailto:concierge@iptv-premium-uk.tv" style={{ color: "var(--purple-3)", fontWeight: 700 }}>contact our support team</a>.
+              Have questions before you decide? <Link href="/faq" style={{ color: "var(--purple-3)", fontWeight: 700 }}>Check our FAQ</Link> or <Link href="mailto:concierge@iptv-premium-uk.tv" style={{ color: "var(--purple-3)", fontWeight: 700 }}>contact our support team</Link>.
             </p>
             <div className="spacer-20"></div>
             <p className="cta-subtitle">
-              <a href="/best-iptv-uk" style={{ color: "var(--purple-3)", fontWeight: 700 }}>Find out why we are rated the best IPTV in the UK &rarr;</a>
+              <Link href="/best-iptv-uk" style={{ color: "var(--purple-3)", fontWeight: 700 }}>Find out why we are rated the best IPTV in the UK &rarr;</Link>
             </p>
           </div>
         </section>

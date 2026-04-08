@@ -8,12 +8,12 @@ export default function Header() {
         <div className="header-container">
           <Link href="/" className="logo" aria-label="Premium IPTV Home">
             <Image
-              src="/premium_iptv_lion_logo_v1.webp"
-              alt="Premium IPTV UK"
+              src="/iptv-premium-uk-logo.webp"
+              alt="IPTV Premium UK logo"
               width={54}
               height={54}
               sizes="54px"
-              quality={75}
+              quality={100}
             />
             <span className="logo-name">
               Premium <span>IPTV</span>
@@ -66,7 +66,7 @@ export default function Header() {
       <div className="mobile-menu" id="mobile-menu">
         <div className="mobile-menu-header">
           <Link href="/" className="logo" style={{ textDecoration: "none" }}>
-            <Image src="/premium_iptv_lion_logo_v1.webp" alt="Premium IPTV UK" width={40} height={40} sizes="40px" loading="lazy" />
+            <Image src="/iptv-premium-uk-logo.webp" alt="IPTV Premium UK" width={40} height={40} sizes="40px" loading="lazy" />
             <span className="logo-name" style={{ fontSize: 17 }}>
               Premium <span>IPTV</span>
             </span>

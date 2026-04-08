@@ -11,14 +11,14 @@ export default function Footer() {
         <div className="cta-bg-overlay"></div>
         <div className="section-container">
           <h2 className="cta-title">
-            Get Your Premium IPTV UK Subscription Today
+            Get Your IPTV Premium UK Subscription Today
           </h2>
           <p className="cta-subtitle">
-            Join over 50,000 happy UK customers. Watch every channel you love in stunning 4K. No buffering. No contracts. No nonsense. Start today and save up to 50%. Pick your plan and watch in minutes.
+            Join over 50,000 happy UK customers. Watch every channel you love in stunning 4K with IPTV Premium UK. No buffering. No contracts. No nonsense. Start your IPTV Premium UK subscription today and save up to 50%.
           </p>
           <div className="spacer-30"></div>
-          <a href="/pricing" className="btn-outline-white btn-large">
-            &#127916; Get Started Now &mdash; 30-Day Money Back Guarantee
+          <a href="/pricing" className="btn-outline-white btn-medium">
+            Get Started Now &mdash; 30-Day Money Back Guarantee
           </a>
         </div>
       </section>
@@ -29,8 +29,8 @@ export default function Footer() {
             <div className="footer-col footer-logo-col">
               <Link href="/" className="logo" style={{ marginBottom: 12, display: "inline-flex" }}>
                 <Image
-                  src="/premium_iptv_lion_logo_v1.webp"
-                  alt="Premium IPTV UK"
+                  src="/iptv-premium-uk-logo.webp"
+                  alt="IPTV Premium UK"
                   width={44}
                   height={44}
                   loading="lazy"
@@ -41,7 +41,7 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="footer-text">
-                Premium IPTV delivers a premium IPTV subscription built specifically for viewers in the United Kingdom &mdash; 37,000+ live channels, 198,000+ on-demand titles, full EPG, catch-up TV, and dedicated UK support.
+                IPTV Premium UK delivers a premium IPTV subscription built specifically for viewers in the United Kingdom &mdash; 37,000+ live channels, 198,000+ on-demand titles, full EPG, catch-up TV, and dedicated UK support.
               </p>
             </div>
             <div className="footer-col">

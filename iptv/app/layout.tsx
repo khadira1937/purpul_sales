@@ -19,10 +19,10 @@ const poppins = Poppins({
 });
 
 const siteTitle =
-  "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026";
+  "IPTV Premium UK – #1 Best IPTV Subscription UK 2026 | 37,000 Channels 4K";
 
 const siteDescription =
-  "Premium IPTV UK subscription with [X,000+] channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, [X]-day guarantee. Subscribe now.";
+  "Get the best IPTV Premium UK subscription in 2026. 37,000+ live UK channels, 198,000 movies & series, 4K streaming, no buffering. Instant activation & 30-day money-back guarantee. Try IPTV Premium UK today!";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://iptv-premium-uk.tv"),
