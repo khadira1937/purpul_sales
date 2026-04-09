@@ -34,13 +34,12 @@ export default function HeroSection() {
         </div>
         <div className="hero-image">
           <Image
-            src="/iptv-premium-uk.webp"
-            alt="iptv premium uk"
+            src="/premium iptv.webp"
+            alt="IPTV uk"
             width={600}
             height={400}
             preload
             fetchPriority="high"
-            sizes="(max-width: 768px) 90vw, 560px"
             quality={100}
           />
         </div>
