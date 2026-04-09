@@ -5,47 +5,55 @@ export default function WhyUsSection() {
     <section className="why-us-section" id="why-us">
       <div className="section-container">
         <h2 className="section-title white">
-          The Best IPTV Premium UK Service &mdash; Why We Are Different in 2026
+          Why Choose IPTV Premium UK — The Best IPTV UK Subscription in 2026
         </h2>
+        
         <p className="section-intro">
-          Most IPTV providers fail with slow streams, frozen screens, and no real UK support. We built IPTV Premium UK to fix all of that with stable 4K streaming, real UK-based support, and full-feature plans with no hidden extras. Experience the true premium IPTV subscription UK that actually delivers what you pay for.
+          While other iptv providers uk fail with buffering, we offer a stable iptv uk 4k experience. 
+          Our service is built to be the most reliable iptv subscription uk 4k on the market today.
         </p>
+
         <div className="spacer-30"></div>
+
         <div className="features-grid">
+          
           <div className="feature-card">
             <div className="feature-icon">
               <Icon name="flag" />
             </div>
-            <h3 className="feature-title">4K UHD on Every Screen</h3>
+            <h3 className="feature-title">British IPTV 4K on Every Screen</h3>
             <p className="feature-desc">
-              Stream every match, film, and series in crystal-clear 4K Ultra HD on Smart TVs, phones, tablets, and projectors. The picture stays sharp, vivid, and smooth on every device.
+              Stream every match and series in crystal clear UHD. Our iptv uk 4k technology ensures a vivid picture on Smart TVs, tablets, and phones.
             </p>
           </div>
-          <div className="feature-card">
-            <div className="feature-icon">
-              <Icon name="shield-halved" />
-            </div>
-            <h3 className="feature-title">Zero Buffering with Anti-Freeze 9.0</h3>
-            <p className="feature-desc">
-              Our anti-freeze technology keeps streams stable during live sports and peak evening hours. With 99.9% uptime and UK-optimized servers, your viewing stays rock solid.
-            </p>
-          </div>
+
           <div className="feature-card">
             <div className="feature-icon">
               <Icon name="bolt" />
             </div>
-            <h3 className="feature-title">Built-In VPN and Instant Activation</h3>
+            <h3 className="feature-title">Fast IPTV with Anti Freeze 9.0</h3>
             <p className="feature-desc">
-              Your stream is private from the moment you log in thanks to built-in VPN protection. Order today, receive your account by email within minutes, and start watching right away.
+              Don't settle for slow streams. Experience fast iptv performance with 99.9% uptime, even during the busiest live sports hours.
             </p>
           </div>
+
+          <div className="feature-card">
+            <div className="feature-icon">
+              <Icon name="shield-halved" />
+            </div>
+            <h3 className="feature-title">Buy IPTV Subscription with Built In VPN</h3>
+            <p className="feature-desc">
+              When you buy iptv uk from us, your privacy is protected. Get instant activation and secure streaming from the moment you join.
+            </p>
+          </div>
+
           <div className="feature-card">
             <div className="feature-icon">
               <Icon name="headset" />
             </div>
-            <h3 className="feature-title">24/7 UK Support and 30-Day Guarantee</h3>
+            <h3 className="feature-title">Cheap IPTV Plans & 24/7 UK Support</h3>
             <p className="feature-desc">
-              Our UK team is available 24/7 on live chat, email, and WhatsApp. Every plan is backed by a full 30-day money-back guarantee, so you can subscribe with confidence. <a href="/refund-policy">Read our refund policy &rarr;</a>
+              We provide a cheap iptv solution that doesn't compromise on quality. Our UK team is here 24/7 to support your iptv subscription uk 4k.
             </p>
           </div>
         </div>

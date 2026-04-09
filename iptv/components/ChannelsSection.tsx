@@ -5,49 +5,56 @@ export default function ChannelsSection() {
     <section className="channels-section" id="channels">
       <div className="section-container">
         <h2 className="section-title white">
-          37,000+ UK and International Channels with IPTV Premium UK
+          37,000+ Channels Included with IPTV Premium UK
         </h2>
         <p className="section-intro">
-          Every major British channel is included with IPTV Premium UK, plus top international networks, premium sports, and a huge movie lineup.
+          Experience the ultimate iptv premium uk service featuring every major British channel and premium sports network.
         </p>
+        
         <div className="spacer-30"></div>
+        
         <div className="channels-grid">
           <div className="channel-category">
             <div className="channel-category-icon">
               <Icon name="tv" />
             </div>
-            <h3>British Entertainment</h3>
-            <p>BBC One, BBC Two, ITV1, ITV2, ITV3, ITV4, Channel 4, E4, Channel 5, Sky Atlantic, Sky Max, Dave, UKTV Gold, and more.</p>
+            <h3>British IPTV 4K Entertainment</h3>
+            <p>BBC One, ITV1, Sky Atlantic, and more. Experience the best iptv uk subscription quality with crystal clear resolution.</p>
           </div>
+
           <div className="channel-category">
             <div className="channel-category-icon">
               <Icon name="futbol" />
             </div>
-            <h3>UK Sports</h3>
-            <p>Sky Sports, TNT Sports, BT Sport, Eurosport, and major events including Premier League, Champions League, Formula 1, UFC, boxing, cricket, and rugby.</p>
+            <h3>Top IPTV Providers UK for Sports</h3>
+            <p>Sky Sports, TNT Sports, and every Premier League match. Our fast iptv servers ensure you never miss a goal.</p>
           </div>
+
           <div className="channel-category">
             <div className="channel-category-icon">
               <Icon name="film" />
             </div>
-            <h3>Movies</h3>
-            <p>Sky Cinema channels, Film4, blockbuster premieres, and instant access to our 198,000+ on-demand films and series library.</p>
+            <h3>Movies & IPTV UK 4K VOD</h3>
+            <p>Access 198,000+ on demand films. When you buy iptv subscription from us, you get the full cinema experience at home.</p>
           </div>
+
           <div className="channel-category">
             <div className="channel-category-icon">
               <Icon name="newspaper" />
             </div>
-            <h3>News &amp; Documentary</h3>
-            <p>BBC News, Sky News, ITV News, CNN, BBC Four, National Geographic, Discovery, and History Channel.</p>
+            <h3>Fast IPTV News & Documentary</h3>
+            <p>Stay updated with BBC News, Sky News, and National Geographic, all streaming via our fast iptv infrastructure.</p>
           </div>
+
           <div className="channel-category">
             <div className="channel-category-icon">
               <Icon name="child" />
             </div>
-            <h3>Kids</h3>
-            <p>CBeebies, CBBC, Cartoon Network, Nickelodeon, Disney Channel, BabyTV, and family-friendly channels for all ages.</p>
+            <h3>Cheap IPTV for Family & Kids</h3>
+            <p>CBeebies, Disney Channel, and Nickelodeon. High quality family fun that makes us the most cheap iptv premium choice.</p>
           </div>
         </div>
+
         <div className="spacer-30"></div>
         <div style={{ textAlign: "center" }}>
           <a href="/channels" className="btn-primary">
