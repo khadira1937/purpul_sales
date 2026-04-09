@@ -28,18 +28,18 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/#why-us" className="nav-link">
-                  Why Choose
-                </Link>
-              </li>
-              <li>
                 <Link href="/pricing" className="nav-link">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/best-iptv-uk" className="nav-link">
+                <Link href="/guide" className="nav-link">
                   Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="nav-link">
+                  FAQ
                 </Link>
               </li>
             </ul>
@@ -78,22 +78,22 @@ export default function Header() {
         <nav className="mobile-nav">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/#why-us">Why Choose</a>
+              <Link href="/pricing">Pricing</Link>
             </li>
             <li>
-              <a href="/pricing">Pricing</a>
+              <Link href="/guide">Guide</Link>
             </li>
             <li>
-              <a href="/best-iptv-uk">Guide</a>
+              <Link href="/faq">FAQ</Link>
             </li>
           </ul>
         </nav>
-        <a href="/pricing" className="btn-mobile-cta">
+        <Link href="/pricing" className="btn-mobile-cta">
           Get Started Now
-        </a>
+        </Link>
       </div>
     </>
   );

@@ -34,8 +34,8 @@ export default function HeroSection() {
         </div>
         <div className="hero-image">
           <Image
-            src="/premium iptv.webp"
-            alt="IPTV uk"
+            src="/iptv-premium-uk.webp"
+            alt="iptv premium uk"
             width={600}
             height={400}
             preload

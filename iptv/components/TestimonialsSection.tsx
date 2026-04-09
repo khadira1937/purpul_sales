@@ -8,8 +8,8 @@ export default function TestimonialsSection() {
       <div className="section-container">
         <div className="stars-rating">
           <Image
-            src="/5-stars-1-copy.webp"
-            alt="Five-star Premium IPTV UK reviews"
+            src="/iptv-premium-uk-5-stars.webp"
+            alt="iptv premium uk 5 stars"
             width={200}
             height={41}
             loading="lazy"

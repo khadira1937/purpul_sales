@@ -1384,6 +1384,7 @@ section[id] { scroll-margin-top: 88px; }
 @media (max-width: 767px) {
   .channels-section { padding: 60px 0; }
   .channels-grid { grid-template-columns: 1fr; }
+  .channel-category { grid-column: auto;}
   .steps-section { padding: 60px 0; }
   .steps-grid { grid-template-columns: 1fr; }
   .steps-grid.steps-grid-5 { grid-template-columns: 1fr; }

@@ -156,7 +156,7 @@ export default function PricingPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">Pricing</li>
             </ol>
           </div>
@@ -170,7 +170,7 @@ export default function PricingPage() {
               IPTV Premium UK Plans 2026 &mdash; Best IPTV Subscription UK Prices | Instant Activation
             </h1>
             <h2 className="pricing-subtitle">
-              Choose the perfect IPTV Premium UK plan for your needs in 2026. Every IPTV Premium UK subscription includes 37,000+ live UK channels, 198,000+ movies & series in 4K, built-in VPN, anti-freeze technology, 24/7 UK support, and full compatibility with all devices. No contracts, no hidden fees, and 30-day money-back guarantee on every IPTV Premium UK plan.
+              Every IPTV Premium UK plan includes 4K UHD streams, built-in VPN, anti-freeze technology, full UK channels, 24/7 support, and a 30-day money-back guarantee.
             </h2>
 
             <div className="spacer-30"></div>
@@ -297,34 +297,34 @@ export default function PricingPage() {
           <div className="section-container">
             <h2 className="section-title white">What Is Included in Every IPTV Premium UK Plan</h2>
             <p className="section-intro">
-              Every IPTV Premium UK subscription &mdash; whether monthly or annual &mdash; includes the complete Premium IPTV experience with no feature restrictions.
+              Every IPTV Premium UK subscription &mdash; whether monthly or annual &mdash; includes the complete Premium IPTV experience with no feature restrictions, delivering a true British IPTV 4K service to your living room.
             </p>
             <div className="spacer-30"></div>
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="tv" /></div>
-                <h3 className="feature-title">Full Channel Access</h3>
+                <h3 className="feature-title">British IPTV 4K Entertainment</h3>
                 <p className="feature-desc">
                   You receive every channel in our lineup from day one, including 37,000+ live channels with complete UK coverage. Nothing is locked behind a higher tier. <a href="/channels">Browse the full channel list &rarr;</a>
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="film" /></div>
-                <h3 className="feature-title">On-Demand Library</h3>
+                <h3 className="feature-title">Movies & IPTV UK 4K VOD</h3>
                 <p className="feature-desc">
                   198,000+ films and series updated daily. Search, browse by category, and watch instantly &mdash; included at no extra cost.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="calendar-alt" /></div>
-                <h3 className="feature-title">EPG &amp; Catch-Up</h3>
+                <h3 className="feature-title">Fast IPTV News &amp; Documentary</h3>
                 <p className="feature-desc">
                   A proper electronic programme guide lets you see what is on now and coming up. The 7-day catch-up feature means you never miss a programme.
                 </p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Icon name="laptop" /></div>
-                <h3 className="feature-title">Multi-Device Streaming</h3>
+                <h3 className="feature-title">Cheap IPTV for Family & Kids</h3>
                 <p className="feature-desc">
                   Use your subscription on up to 5 devices at the same time. Works on Firestick, Android, iOS, Smart TVs, MAG boxes, computers, and more.
                 </p>
@@ -343,22 +343,22 @@ export default function PricingPage() {
         <section className="steps-section" id="how-to-subscribe">
           <div className="section-container">
             <h2 className="section-title white">How to Get Your IPTV Premium UK Subscription &mdash; 3 Simple Steps</h2>
-            <p className="section-intro">Start streaming in minutes. No technical setup stress, no delays, and no contract lock-ins.</p>
+            <p className="section-intro">Start streaming in minutes. If you want to buy IPTV subscription with no technical setup stress, no delays, and no contract lock-ins, just follow these steps:</p>
             <div className="spacer-30"></div>
             <div className="steps-grid">
               <div className="step-card">
                 <div className="step-number">1</div>
-                <h3>Step 1 &mdash; Choose Your Plan</h3>
+                <h3>Step 1 &mdash; Pick Your Best IPTV UK Subscription</h3>
                 <p>Pick the plan that suits you best. Every plan includes the full service from day one, and longer plans offer the best savings.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">2</div>
-                <h3>Step 2 &mdash; Get Your Account in Minutes</h3>
+                <h3>Step 2 &mdash; Get Fast IPTV Activation in Minutes</h3>
                 <p>As soon as payment is confirmed, your login details are sent by email. No waiting around and no complicated activation process.</p>
               </div>
               <div className="step-card">
                 <div className="step-number">3</div>
-                <h3>Step 3 &mdash; Start Watching Straight Away</h3>
+                <h3>Step 3 &mdash; Start Watching British IPTV 4K</h3>
                 <p>Open your IPTV app, enter your details, and press play. Setup takes under two minutes, and our team is ready to help if needed.</p>
               </div>
             </div>
@@ -383,7 +383,7 @@ export default function PricingPage() {
                     <Icon name="chevron-down" />
                   </button>
                   <div className="faq-answer">
-                    <p>No. The price shown is the total cost. There are no activation fees, no per-channel charges, and no hidden costs. Your subscription includes everything listed on this page.</p>
+                    <p>No. The price shown is the total cost. Unlike some other IPTV providers UK, there are no activation fees, no per-channel charges, and no hidden costs. Your subscription includes everything listed on this page.</p>
                   </div>
                 </div>
                 <div className="faq-item">
@@ -436,7 +436,7 @@ export default function PricingPage() {
               If you are new to IPTV and want to test the service before committing, the 3-month plan is ideal. It gives you full access to everything so you can evaluate channel quality, streaming reliability, and the VOD library with minimal commitment.
             </p>
             <p className="cta-subtitle">
-              If you already know you want IPTV and are looking for the best value, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.
+              If you already know you want IPTV and are looking for a high-quality yet cheap IPTV alternative to expensive cable bills, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.  
             </p>
             <div className="spacer-20"></div>
             <Link href="#pricing" className="btn-primary btn-medium">Subscribe Now &rarr;</Link>

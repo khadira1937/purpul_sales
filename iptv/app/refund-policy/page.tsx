@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Refund Policy — Premium IPTV UK",
@@ -16,7 +17,7 @@ export default function RefundPolicyPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">Refund Policy</li>
             </ol>
           </div>

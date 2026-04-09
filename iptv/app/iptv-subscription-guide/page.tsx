@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Subscription Guide — How IPTV Works | Premium IPTV",
@@ -16,7 +17,7 @@ export default function IptvGuidePage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">IPTV Subscription Guide</li>
             </ol>
           </div>

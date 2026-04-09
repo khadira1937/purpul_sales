@@ -14,12 +14,12 @@ export default function Footer() {
             Get Your IPTV Premium UK Subscription Today
           </h2>
           <p className="cta-subtitle">
-            Join over 50,000 happy UK customers. Watch every channel you love in stunning 4K with IPTV Premium UK. No buffering. No contracts. No nonsense. Start your IPTV Premium UK subscription today and save up to 50%.
+            Join over 50,000 happy UK customers. Watch every channel you love in stunning 4K with the ultimate IPTV UK 4K service. No buffering. No contracts. No nonsense. Start your IPTV Premium UK subscription today and save up to 50%.
           </p>
           <div className="spacer-30"></div>
-          <a href="/pricing" className="btn-outline-white btn-medium">
+          <Link href="/pricing" className="btn-outline-white btn-medium">
             Get Started Now &mdash; 30-Day Money Back Guarantee
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -46,12 +46,12 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h4 className="footer-heading">Quick Links</h4>
-              <p className="footer-text"><a href="/">Home</a></p>
-              <p className="footer-text"><a href="/pricing">Pricing</a></p>
-              <p className="footer-text"><a href="/best-iptv-uk">Best IPTV UK Guide</a></p>
-              <p className="footer-text"><a href="/channels">Channels</a></p>
-              <p className="footer-text"><a href="/setup">Setup Guides</a></p>
-              <p className="footer-text"><a href="/faq">FAQ</a></p>
+              <p className="footer-text"><Link href="/">Home</Link></p>
+              <p className="footer-text"><Link href="/pricing">Pricing</Link></p>
+              <p className="footer-text"><Link href="/guide">Best IPTV UK Guide</Link></p>
+              <p className="footer-text"><Link href="/channels">Channels</Link></p>
+              <p className="footer-text"><Link href="/setup">Setup Guides</Link></p>
+              <p className="footer-text"><Link href="/faq">FAQ</Link></p>
             </div>
             <div className="footer-col">
               <h4 className="footer-heading">Contact</h4>
@@ -67,9 +67,9 @@ export default function Footer() {
         </div>
       </footer>
 
-      <a href="#" className="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+      <Link href="#" className="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
         <Icon name="chevron-up" />
-      </a>
+      </Link>
     </>
   );
 }

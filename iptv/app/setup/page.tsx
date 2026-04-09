@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Setup Guides — Install IPTV on Any Device | Premium IPTV",
@@ -16,7 +17,7 @@ export default function SetupPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">Setup Guides</li>
             </ol>
           </div>
@@ -51,7 +52,7 @@ export default function SetupPage() {
               <p>Our support team is available [HOURS/24/7] to help you set up your device. Contact us via [CHANNELS: live chat, email, WhatsApp] for personal assistance at no extra charge.</p>
               <div className="spacer-30"></div>
               <div style={{ textAlign: "center" }}>
-                <a href="/pricing" className="btn-primary btn-large">Get Your Subscription &rarr;</a>
+                <Link href="/pricing" className="btn-primary btn-large">Get Your Subscription &rarr;</Link>
               </div>
             </div>
           </div>
