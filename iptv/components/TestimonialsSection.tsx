@@ -26,16 +26,16 @@ export default function TestimonialsSection() {
         <div className="testimonials-slider" id="testimonials-slider">
           <div className="testimonials-track" id="testimonials-track">
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;
-                  The best IPTV Premium UK service I've tried. 4K streams are brilliant and the sports channels never buffer.
+                  The best IPTV Premium UK service I&apos;ve tried. 4K streams are brilliant and the sports channels never buffer.
                   &rdquo;
               </p>
               <div className="testimonial-author">
@@ -43,12 +43,12 @@ export default function TestimonialsSection() {
               </div>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;
@@ -59,12 +59,12 @@ export default function TestimonialsSection() {
               </div>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;The 4K sports streams are brilliant. I expected buffering during big games. It never happened. The best IPTV service I have tried.&rdquo;
@@ -74,12 +74,12 @@ export default function TestimonialsSection() {
               </div>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;I tried 3 different IPTV providers before finding this one. Nothing came close. The built-in VPN is a great touch. Great value for money.&rdquo;
@@ -89,12 +89,12 @@ export default function TestimonialsSection() {
               </div>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;I was not sure at first so I chose the 1 month plan. It won me over in the first hour. A cheap IPTV subscription that delivers premium quality.&rdquo;
@@ -104,12 +104,12 @@ export default function TestimonialsSection() {
               </div>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-stars">
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
-                <Icon name="star" />
+              <div className="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
+                <Icon name="star" aria-hidden="true" />
               </div>
               <p className="testimonial-text">
                 &ldquo;The VOD library is massive. My whole family uses it now. Kids watch cartoons, my husband watches sport, and I watch box sets. One plan covers everyone.&rdquo;

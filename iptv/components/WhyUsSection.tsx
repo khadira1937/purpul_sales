@@ -33,7 +33,7 @@ export default function WhyUsSection() {
             </div>
             <h3 className="feature-title">Fast IPTV with Anti Freeze 9.0</h3>
             <p className="feature-desc">
-              Don't settle for slow streams. Experience fast iptv performance with 99.9% uptime, even during the busiest live sports hours.
+              Don&apos;t settle for slow streams. Experience fast iptv performance with 99.9% uptime, even during the busiest live sports hours.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function WhyUsSection() {
             </div>
             <h3 className="feature-title">Cheap IPTV Plans & 24/7 UK Support</h3>
             <p className="feature-desc">
-              We provide a cheap iptv solution that doesn't compromise on quality. Our UK team is here 24/7 to support your iptv subscription uk 4k.
+              We provide a cheap iptv solution that doesn&apos;t compromise on quality. Our UK team is here 24/7 to support your iptv subscription uk 4k.
             </p>
           </div>
         </div>

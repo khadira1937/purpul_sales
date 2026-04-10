@@ -193,7 +193,9 @@ function initPricingToggle() {
 
   const setActive = (activeButton: HTMLButtonElement) => {
     buttons.forEach((button) => {
-      button.classList.toggle("active", button === activeButton);
+      const isActive = button === activeButton;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", isActive.toString());
     });
   };
 

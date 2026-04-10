@@ -22,20 +22,20 @@ export default function HeroSection() {
           </div>
           <div className="hero-guarantees">
             <p>
-              <span className="check-icon">&#10003;</span> 30-Day Money-Back Guarantee
+              <span className="check-icon" role="img" aria-label="checked">✓</span> 30-Day Money-Back Guarantee
             </p>
             <p>
-              <span className="check-icon">&#10003;</span> 24/7 UK Support
+              <span className="check-icon" role="img" aria-label="checked">✓</span> 24/7 UK Support
             </p>
             <p>
-              <span className="check-icon">&#10003;</span> Instant Activation
+              <span className="check-icon" role="img" aria-label="checked">✓</span> Instant Activation
             </p>
           </div>
         </div>
         <div className="hero-image">
           <Image
             src="/iptv-premium-uk.webp"
-            alt="iptv premium uk"
+            alt="IPTV Premium UK subscription service - 4K streaming on multiple devices"
             width={600}
             height={400}
             preload

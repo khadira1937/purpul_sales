@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Best IPTV UK 2026 — Complete Guide for UK Viewers",
@@ -123,7 +124,7 @@ export default function BestIptvUkPage() {
           <div className="section-container">
             <ol>
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li aria-current="page">Best IPTV UK 2026</li>
             </ol>

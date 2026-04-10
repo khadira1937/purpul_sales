@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Full Channel List — Premium IPTV UK",
@@ -16,7 +17,7 @@ export default function ChannelsPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">Channels</li>
             </ol>
           </div>
@@ -51,7 +52,9 @@ export default function ChannelsPage() {
               <p>For the most up-to-date channel list or to request specific channels, please contact our support team.</p>
               <div className="spacer-30"></div>
               <div style={{ textAlign: "center" }}>
-                <a href="/pricing" className="btn-primary btn-large">Subscribe Now &rarr;</a>
+                <Link href="/pricing" className="btn-primary btn-large">
+                  Subscribe Now &rarr;
+                </Link>
               </div>
             </div>
           </div>

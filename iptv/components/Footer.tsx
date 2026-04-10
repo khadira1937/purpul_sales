@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      <Link href="#" className="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+      <Link href="#hero" className="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top of page">
         <Icon name="chevron-up" />
       </Link>
     </>

@@ -12,10 +12,10 @@ export default function PricingSection() {
 
         <div className="plans-section">
           <div className="connection-toggle">
-            <button id="toggle-1" className="toggle-btn active">
+            <button id="toggle-1" className="toggle-btn active" aria-pressed="true" aria-label="Select 1 Connection plan">
               1 Connection
             </button>
-            <button id="toggle-2" className="toggle-btn">
+            <button id="toggle-2" className="toggle-btn" aria-pressed="false" aria-label="Select 2 Connections plan">
               2 Connections
             </button>
           </div>
@@ -82,7 +82,7 @@ export default function PricingSection() {
             </div>
 
             <div className="plan-card premium" data-plan="12">
-              <div className="popular-badge">Best Value</div>
+              <div className="popular-badge" aria-label="Best Value - Most popular plan">Best Value</div>
               <h4 className="plan-title" data-base-text="12 Months">
                 12 Months
               </h4>

@@ -9,7 +9,7 @@ export default function FAQSection() {
           <h2>Your Questions About IPTV Premium UK &mdash; Answered</h2>
           <div className="faq-accordion">
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: Is IPTV Premium UK easy to set up?">
                 <span>Is IPTV Premium UK easy to set up?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -20,7 +20,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: What devices work with IPTV Premium UK subscription?">
                 <span>What devices work with IPTV Premium UK subscription?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -31,7 +31,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: How fast does my broadband need to be for IPTV Premium UK?">
                 <span>How fast does my broadband need to be for IPTV Premium UK?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -42,7 +42,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: Is there a minimum contract with IPTV Premium UK?">
                 <span>Is there a minimum contract with IPTV Premium UK?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -53,8 +53,8 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
-                <span>What if I'm not happy with the IPTV Premium UK service?</span>
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: What if I&apos;m not happy with the IPTV Premium UK service?">
+                <span>What if I&apos;m not happy with the IPTV Premium UK service?</span>
                 <Icon name="chevron-down" />
               </button>
               <div className="faq-answer">
@@ -64,7 +64,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: How many screens can I use at once with IPTV Premium UK?">
                 <span>How many screens can I use at once with IPTV Premium UK?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -75,7 +75,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: Do you include UK sports channels with IPTV Premium UK?">
                 <span>Do you include UK sports channels with IPTV Premium UK?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -86,7 +86,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: What is your IPTV Premium UK service uptime?">
                 <span>What is your IPTV Premium UK service uptime?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -97,7 +97,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: What happens when my IPTV Premium UK plan runs out?">
                 <span>What happens when my IPTV Premium UK plan runs out?</span>
                 <Icon name="chevron-down" />
               </button>
@@ -108,7 +108,7 @@ export default function FAQSection() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-question" aria-expanded="false">
+              <button className="faq-question" aria-expanded="false" aria-label="Toggle: Is there support if I need help with IPTV Premium UK?">
                 <span>Is there support if I need help with IPTV Premium UK?</span>
                 <Icon name="chevron-down" />
               </button>

@@ -905,7 +905,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--white); line-height: 1.2
 }
 .faq-answer.open { max-height: 400px; }
 .faq-answer p {
-  padding: 0 22px 18px;
+  padding: 18px;
   font-size: 15px;
   color: #9080b8;
   line-height: 1.65;

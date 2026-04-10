@@ -9,7 +9,7 @@ export default function DevicesSection() {
           <div className="devices-images">
             <Image
               src="/iptv-premium-uk-devices-compatibility.webp"
-              alt="IPTV Premium UK devices compatibility"
+              alt="Devices compatible with IPTV Premium UK - Smart TV, Firestick, Android TV, iPhone, iPad, PC, Mac"
               width={912}
               height={440}
               loading="lazy"
@@ -18,7 +18,7 @@ export default function DevicesSection() {
             />
             <Image
               src="/iptv-premium-uk-supported-devices.webp"
-              alt="IPTV Premium UK supported devices"
+              alt="IPTV Premium UK app compatibility list showing Smarters Pro, TiviMate, GSE Smart IPTV and other supported players"
               width={1024}
               height={350}
               loading="lazy"
@@ -32,7 +32,7 @@ export default function DevicesSection() {
             <div className="spacer-20"></div>
             <Image
               src="/iptv-premium-uk-supported-devices.webp"
-              alt="IPTV Premium UK supported devices"
+              alt="IPTV Premium UK app compatibility showing Smarters Pro, TiviMate, GSE Smart IPTV, Perfect Player, and VLC"
               width={768}
               height={262}
               loading="lazy"

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions | Premium IPTV UK",
@@ -17,7 +18,7 @@ export default function FaqPage() {
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <div className="section-container">
             <ol>
-              <li><a href="/">Home</a></li>
+              <li><Link href="/">Home</Link></li>
               <li aria-current="page">FAQ</li>
             </ol>
           </div>
@@ -162,9 +163,9 @@ export default function FaqPage() {
 
               <div className="spacer-50"></div>
               <div style={{ textAlign: "center" }}>
-                <a href="/pricing" className="btn-primary btn-large">
+                <Link href="/pricing" className="btn-primary btn-large">
                   Get Your IPTV Premium UK Subscription Today
-                </a>
+                </Link>
               </div>
             </div>
           </div>
