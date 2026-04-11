@@ -2,23 +2,35 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 
+import { SITE_URL, SITE_NAME, OG_DEFAULTS } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const pageTitle =
+  "Buy IPTV Subscription UK — Cheap IPTV Plans from £25.99 | IPTV Premium UK 2026";
+const pageDescription =
+  "Buy IPTV UK subscription from £25.99. 37,000+ live channels, 198,000+ films & series, British IPTV 4K, instant activation, no contract. Compare cheap IPTV plans with a 30-day money-back guarantee.";
+
 export const metadata: Metadata = {
-  title: "Pricing Plans | Premium IPTV UK",
-  description:
-    "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
+  title: pageTitle,
+  description: pageDescription,
+  keywords: [
+    "buy iptv subscription",
+    "cheap iptv",
+    "iptv premium uk pricing",
+    "buy iptv uk",
+    "iptv subscription uk 4k",
+    "best iptv uk subscription",
+    "iptv providers uk",
+    "fast iptv",
+  ],
   alternates: { canonical: "/pricing" },
   openGraph: {
-    title: "Pricing Plans | Premium IPTV UK",
-    description:
-      "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
-    url: "https://iptv-premium-uk.tv/pricing",
+    ...OG_DEFAULTS,
+    title: pageTitle,
+    description: pageDescription,
+    url: `${SITE_URL}/pricing`,
     type: "website",
-    locale: "en_GB",
-    siteName: "Premium IPTV",
-    images: [{ url: "/og-image.webp" }],
   },
 };
 
@@ -27,29 +39,28 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://iptv-premium-uk.tv/pricing#webpage",
-      url: "https://iptv-premium-uk.tv/pricing",
-      name: "Pricing Plans | Premium IPTV UK",
+      "@id": `${SITE_URL}/pricing#webpage`,
+      url: `${SITE_URL}/pricing`,
+      name: pageTitle,
       inLanguage: "en-GB",
-      isPartOf: { "@id": "https://iptv-premium-uk.tv/#website" },
-      description:
-        "Choose your Premium IPTV UK plan with 37,000+ live channels, 198,000+ films and series, 7-day catch-up TV, and a 30-day money-back guarantee.",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      description: pageDescription,
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://iptv-premium-uk.tv/" },
-        { "@type": "ListItem", position: 2, name: "Pricing", item: "https://iptv-premium-uk.tv/pricing" },
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Pricing", item: `${SITE_URL}/pricing` },
       ],
     },
     {
       "@type": "Product",
-      name: "Premium IPTV — 3-Month IPTV Subscription",
+      name: "IPTV Premium UK — 3-Month Subscription",
       description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 3 months.",
-      brand: { "@type": "Brand", name: "Premium IPTV" },
+      brand: { "@type": "Brand", name: SITE_NAME },
       offers: {
         "@type": "Offer",
-        url: "https://iptv-premium-uk.tv/pricing",
+        url: `${SITE_URL}/pricing`,
         priceCurrency: "GBP",
         price: "25.99",
         availability: "https://schema.org/InStock",
@@ -58,12 +69,12 @@ const jsonLd = {
     },
     {
       "@type": "Product",
-      name: "Premium IPTV — 6-Month IPTV Subscription",
+      name: "IPTV Premium UK — 6-Month Subscription",
       description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 6 months.",
-      brand: { "@type": "Brand", name: "Premium IPTV" },
+      brand: { "@type": "Brand", name: SITE_NAME },
       offers: {
         "@type": "Offer",
-        url: "https://iptv-premium-uk.tv/pricing",
+        url: `${SITE_URL}/pricing`,
         priceCurrency: "GBP",
         price: "35.99",
         availability: "https://schema.org/InStock",
@@ -72,12 +83,12 @@ const jsonLd = {
     },
     {
       "@type": "Product",
-      name: "Premium IPTV — 12-Month IPTV Subscription",
+      name: "IPTV Premium UK — 12-Month Subscription",
       description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 12 months.",
-      brand: { "@type": "Brand", name: "Premium IPTV" },
+      brand: { "@type": "Brand", name: SITE_NAME },
       offers: {
         "@type": "Offer",
-        url: "https://iptv-premium-uk.tv/pricing",
+        url: `${SITE_URL}/pricing`,
         priceCurrency: "GBP",
         price: "49.99",
         availability: "https://schema.org/InStock",
@@ -86,12 +97,12 @@ const jsonLd = {
     },
     {
       "@type": "Product",
-      name: "Premium IPTV — 24-Month IPTV Subscription",
+      name: "IPTV Premium UK — 24-Month Subscription",
       description: "Premium IPTV subscription with 37,000+ live channels, 198,000+ films and series, full EPG, and 7-day catch-up TV for 24 months.",
-      brand: { "@type": "Brand", name: "Premium IPTV" },
+      brand: { "@type": "Brand", name: SITE_NAME },
       offers: {
         "@type": "Offer",
-        url: "https://iptv-premium-uk.tv/pricing",
+        url: `${SITE_URL}/pricing`,
         priceCurrency: "GBP",
         price: "79.99",
         availability: "https://schema.org/InStock",
@@ -436,7 +447,7 @@ export default function PricingPage() {
               If you are new to IPTV and want to test the service before committing, the 3-month plan is ideal. It gives you full access to everything so you can evaluate channel quality, streaming reliability, and the VOD library with minimal commitment.
             </p>
             <p className="cta-subtitle">
-              If you already know you want IPTV and are looking for a high-quality yet cheap IPTV alternative to expensive cable bills, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.  
+              If you already know you want IPTV and are looking for a high-quality yet cheap IPTV alternative to expensive cable bills, the 12-month and 24-month plans offer the strongest savings compared with shorter plans.
             </p>
             <div className="spacer-20"></div>
             <Link href="#pricing" className="btn-primary btn-medium">Subscribe Now &rarr;</Link>

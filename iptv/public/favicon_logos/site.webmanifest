@@ -1,0 +1,20 @@
+{
+  "name": "IPTV Premium UK",
+  "short_name": "IPTV Premium",
+  "icons": [
+    {
+      "src": "/favicon_logos/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon_logos/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6c3ce0",
+  "background_color": "#0a0a1a",
+  "display": "standalone",
+  "start_url": "/"
+}

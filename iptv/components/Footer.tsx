@@ -30,7 +30,7 @@ export default function Footer() {
               <Link href="/" className="logo" style={{ marginBottom: 12, display: "inline-flex" }}>
                 <Image
                   src="/iptv-premium-uk-logo.webp"
-                  alt="IPTV Premium UK"
+                  alt="IPTV Premium UK Logo"
                   width={44}
                   height={44}
                   loading="lazy"

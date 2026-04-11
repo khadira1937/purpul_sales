@@ -10,22 +10,31 @@ import DevicesSection from "@/components/DevicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 
+import {
+  SITE_URL,
+  SITE_NAME,
+  KEYWORDS,
+  OG_DEFAULTS,
+  LOGO_ABSOLUTE,
+} from "@/lib/metadata";
 import type { Metadata } from "next";
 
+const pageTitle =
+  "IPTV Premium UK – #1 Best IPTV Subscription UK 2026 | 37,000+ Channels 4K UHD";
+const pageDescription =
+  "Buy IPTV Premium UK — 37,000+ live UK channels, 198,000+ films & series in 4K UHD. Fast IPTV activation, zero buffering, 30-day money-back guarantee. The best IPTV UK subscription for 2026.";
+
 export const metadata: Metadata = {
-  title: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
-  description:
-    "Buy Premium IPTV UK with 37,000+ live channels and 198,000+ films and series in 4K UHD. Zero buffering, instant activation, and a 30-day money-back guarantee.",
+  title: pageTitle,
+  description: pageDescription,
+  keywords: KEYWORDS,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
-    description:
-      "Buy Premium IPTV UK with 37,000+ live channels and 198,000+ films and series in 4K UHD. Zero buffering, instant activation, and a 30-day money-back guarantee.",
-    url: "https://iptv-premium-uk.tv/",
+    ...OG_DEFAULTS,
+    title: pageTitle,
+    description: pageDescription,
+    url: `${SITE_URL}/`,
     type: "website",
-    locale: "en_GB",
-    siteName: "Premium IPTV",
-    images: [{ url: "/og-image.webp" }],
   },
 };
 
@@ -34,12 +43,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://iptv-premium-uk.tv/#organization",
-      name: "Premium IPTV",
-      url: "https://iptv-premium-uk.tv",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: SITE_URL,
       logo: {
         "@type": "ImageObject",
-        url: "https://iptv-premium-uk.tv/logo.png",
+        url: LOGO_ABSOLUTE,
       },
       contactPoint: {
         "@type": "ContactPoint",
@@ -51,37 +60,58 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://iptv-premium-uk.tv/#website",
-      name: "Premium IPTV",
-      url: "https://iptv-premium-uk.tv",
+      "@id": `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      url: SITE_URL,
       inLanguage: "en-GB",
-      publisher: { "@id": "https://iptv-premium-uk.tv/#organization" },
+      publisher: { "@id": `${SITE_URL}/#organization` },
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://iptv-premium-uk.tv/?s={search_term_string}",
+        target: `${SITE_URL}/?s={search_term_string}`,
         "query-input": "required name=search_term_string",
       },
     },
     {
       "@type": "WebPage",
-      "@id": "https://iptv-premium-uk.tv/#webpage",
-      url: "https://iptv-premium-uk.tv",
-      name: "Premium IPTV UK | #1 IPTV Subscription Service 2026",
+      "@id": `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: pageTitle,
       inLanguage: "en-GB",
-      isPartOf: { "@id": "https://iptv-premium-uk.tv/#website" },
-      about: { "@id": "https://iptv-premium-uk.tv/#organization" },
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: { "@id": `${SITE_URL}/#organization` },
+      description: pageDescription,
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/#service`,
+      name: "IPTV Premium UK Subscription",
       description:
-        "Premium IPTV UK with 37,000+ live channels, 198,000+ films and series, 4K UHD quality, and instant activation.",
+        "Premium IPTV subscription service for UK viewers featuring 37,000+ live channels, 198,000+ films and series in 4K UHD, 7-day catch-up TV, anti-freeze technology, and 24/7 UK-based support.",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      areaServed: {
+        "@type": "Country",
+        name: "United Kingdom",
+      },
+      serviceType: "IPTV Subscription",
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "GBP",
+        lowPrice: "25.99",
+        highPrice: "79.99",
+        offerCount: 4,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/pricing`,
+      },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://iptv-premium-uk.tv/#breadcrumbs",
+      "@id": `${SITE_URL}/#breadcrumbs`,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://iptv-premium-uk.tv/",
+          item: `${SITE_URL}/`,
         },
       ],
     },

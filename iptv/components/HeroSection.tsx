@@ -40,7 +40,6 @@ export default function HeroSection() {
             height={400}
             preload
             fetchPriority="high"
-            quality={100}
           />
         </div>
       </div>

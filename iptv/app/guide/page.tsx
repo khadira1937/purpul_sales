@@ -2,23 +2,35 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 
+import { SITE_URL, SITE_NAME, OG_DEFAULTS, LOGO_ABSOLUTE } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const pageTitle =
+  "Best IPTV UK 2026 — Complete Guide to Choosing an IPTV Premium UK Provider";
+const pageDescription =
+  "Looking for the best IPTV UK service in 2026? This guide covers what UK viewers need to know — channels, quality, devices, pricing, and red flags to avoid when choosing IPTV providers UK.";
+
 export const metadata: Metadata = {
-  title: "Best IPTV UK 2026 — Complete Guide for UK Viewers",
-  description:
-    "Looking for the best IPTV UK service in 2026? This guide covers what UK viewers need to know — channels, quality, devices, pricing, and red flags to avoid.",
-  alternates: { canonical: "/best-iptv-uk" },
+  title: pageTitle,
+  description: pageDescription,
+  keywords: [
+    "best iptv uk subscription",
+    "iptv providers uk",
+    "iptv premium uk guide",
+    "british iptv 4k",
+    "buy iptv uk",
+    "cheap iptv",
+    "iptv subscription uk 4k",
+    "fast iptv",
+  ],
+  alternates: { canonical: "/guide" },
   openGraph: {
-    title: "Best IPTV UK 2026 — Complete Guide for UK Viewers",
-    description:
-      "Looking for the best IPTV UK service in 2026? This guide covers what UK viewers need to know — channels, quality, devices, pricing, and red flags to avoid.",
-    url: "https://iptv-premium-uk.tv/best-iptv-uk",
+    ...OG_DEFAULTS,
+    title: pageTitle,
+    description: pageDescription,
+    url: `${SITE_URL}/guide`,
     type: "article",
-    locale: "en_GB",
-    siteName: "Premium IPTV",
-    images: [{ url: "/og-image.webp" }],
   },
 };
 
@@ -27,11 +39,69 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://iptv-premium-uk.tv/best-iptv-uk#article",
-      headline: "Best IPTV UK 2026 — How to Choose the Right Provider",
+      "@id": `${SITE_URL}/guide#article`,
+      headline: pageTitle,
+      description: pageDescription,
       inLanguage: "en-GB",
-      mainEntityOfPage: "https://iptv-premium-uk.tv/best-iptv-uk",
-      publisher: { "@id": "https://iptv-premium-uk.tv/#organization" },
+      mainEntityOfPage: `${SITE_URL}/guide`,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      author: {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+      image: LOGO_ABSOLUTE,
+    },
+    {
+      "@type": "HowTo",
+      "@id": `${SITE_URL}/guide#howto`,
+      name: "How to Choose the Best IPTV Premium UK Provider in 2026",
+      description:
+        "A step-by-step guide to evaluating IPTV providers in the UK. Covers channel coverage, streaming stability, quality, device compatibility, support, pricing, and contract terms.",
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Check UK Channel Coverage",
+          text: "Verify the provider carries every major UK broadcaster — BBC, ITV, Channel 4, Channel 5 — plus premium sports and entertainment channels like Sky Sports and TNT Sports.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "Test Streaming Stability",
+          text: "Look for anti-freeze technology and a money-back guarantee that gives you time to test during peak hours such as Saturday Premier League kickoffs.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Confirm Streaming Quality",
+          text: "Ensure the provider delivers HD on all major channels, Full HD on premium content, and 4K where the original broadcast supports it.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 4,
+          name: "Verify Device Compatibility",
+          text: "Check support for your devices — Firestick, Smart TVs, Android, iOS, MAG boxes, PCs, and Macs. Confirm multi-screen support for families.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 5,
+          name: "Evaluate Customer Support",
+          text: "Check availability (24/7), channels (live chat, email, WhatsApp), and quality. A genuine money-back guarantee signals confidence.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 6,
+          name: "Compare Pricing and Value",
+          text: "Calculate the effective monthly cost. Look for transparent pricing with no hidden fees and a risk-free way to test the service.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 7,
+          name: "Read the Contract Terms",
+          text: "Ensure there are no long contracts, surprise renewals, or hidden charges. Read the refund policy before paying.",
+        },
+      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -40,13 +110,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://iptv-premium-uk.tv/",
+          item: `${SITE_URL}/`,
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Best IPTV UK 2026",
-          item: "https://iptv-premium-uk.tv/best-iptv-uk",
+          item: `${SITE_URL}/guide`,
         },
       ],
     },

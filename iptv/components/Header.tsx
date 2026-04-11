@@ -13,7 +13,6 @@ export default function Header() {
               width={54}
               height={54}
               sizes="54px"
-              quality={100}
             />
             <span className="logo-name">
               Premium <span>IPTV</span>
